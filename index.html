@@ -12,13 +12,13 @@ try{var _t=localStorage.getItem("thymosin-alpha1-theme");if(_t==="light"||_t==="
 :root{
   --bg0:#06070d; --bg1:#0a0c17;
   --ink:#edf0f9; --muted:#a9b1c9; --faint:#7f88a5;
-  --sky:#53df86; --sky-deep:#15803d;
-  --teal:#66e292; --teal-deep:#052e16;
-  --org:#2aa257; --org-deep:#032210;
-  --amber:#fbbf24; --rose:#fb7185; --cyan:#82e7a6;
+  --sky:#fbbf24; --sky-deep:#ac7d03;
+  --teal:#2dd4bf; --teal-deep:#19786c;
+  --org:#818cf8; --org-deep:#172bf2;
+  --amber:#fbbf24; --rose:#2dd4bf; --cyan:#818cf8;
   --card:#0d1020; --card2:#12162b;
   --line:rgba(255,255,255,.09);
-  --grad:linear-gradient(100deg,#53df86 5%,#66e292 50%,#2aa257 95%);
+  --grad:linear-gradient(100deg,#dfb853 5%,#66e2d2 50%,#2a35a2 95%);
   --ongrad:#0a0c14;
   --radius:18px;
   --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -30,15 +30,15 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
   font-size:1.06rem;line-height:1.75;overflow-x:clip;-webkit-font-smoothing:antialiased}
 .bg-grad{position:fixed;inset:0;z-index:0;pointer-events:none;
   background:
-    radial-gradient(900px 620px at 12% -6%, rgba(21, 128, 61,0.288), transparent 60%),
-    radial-gradient(820px 600px at 88% 22%, rgba(4, 38, 18,0.192), transparent 60%),
-    radial-gradient(1000px 800px at 50% 110%, rgba(5, 46, 22,0.192), transparent 62%),
-    radial-gradient(700px 500px at 78% 78%, rgba(251,113,133,0.096), transparent 60%)}
+    radial-gradient(900px 620px at 12% -6%, rgba(128,98,21,0.288), transparent 60%),
+    radial-gradient(820px 600px at 88% 22%, rgba(4,38,34,0.192), transparent 60%),
+    radial-gradient(1000px 800px at 50% 110%, rgba(5,46,41,0.192), transparent 62%),
+    radial-gradient(700px 500px at 78% 78%, rgba(113,251,234,0.096), transparent 60%)}
 #dots{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.85}
 .orb{position:fixed;z-index:0;pointer-events:none;border-radius:50%;filter:blur(90px)}
-.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(21, 128, 61,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
-.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(4, 38, 18,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
-.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(5, 46, 22,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
+.o1{width:520px;height:520px;left:-140px;top:6%;background:radial-gradient(circle,rgba(128,98,21,0.24),transparent 70%);animation:drift1 38s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;right:-120px;top:38%;background:radial-gradient(circle,rgba(4,38,34,0.192),transparent 70%);animation:drift2 46s ease-in-out infinite alternate}
+.o3{width:430px;height:430px;left:24%;bottom:-160px;background:radial-gradient(circle,rgba(5,46,41,0.192),transparent 70%);animation:drift3 54s ease-in-out infinite alternate}
 @keyframes drift1{from{transform:translate(0,0)}to{transform:translate(120px,80px)}}
 @keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-100px,-70px)}}
 @keyframes drift3{from{transform:translate(0,0)}to{transform:translate(90px,-80px)}}
@@ -67,13 +67,13 @@ body{font-family:var(--font);background:var(--bg0);color:var(--ink);
 [data-theme="light"]{
   --bg0:#e8ebf0; --bg1:#eef1f6;
   --ink:#1b2436; --muted:#4d5871; --faint:#707a93;
-  --sky:#166332; --sky-deep:#031d0e;
-  --teal:#042612; --teal-deep:#021008;
-  --org:#166332; --org-deep:#031d0e;
-  --amber:#b45309; --rose:#e11d48; --cyan:#4d7c0f;
+  --sky:#b48305; --sky-deep:#473402;
+  --teal:#168577; --teal-deep:#062521;
+  --org:#b48305; --org-deep:#473402;
+  --amber:#1a2ff9; --rose:#b48305; --cyan:#168577;
   --card:#f8fafc; --card2:#e9edf3;
   --line:rgba(15,23,42,.14);
-  --grad:linear-gradient(100deg,#166332,#042612,#127437);
+  --grad:linear-gradient(100deg,#634d16,#042622,#121b74);
   --ongrad:#ffffff;
   color-scheme:light;
 }
@@ -119,7 +119,7 @@ nav.chapters a.active{color:#0a0c14;background:var(--grad);border-color:transpar
   .toc .mini-bar{height:3px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:.55rem;overflow:hidden}
   .toc .mini-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px}
 }
-.wrap{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 1.25rem}
 section.chapter{padding:4.2rem 0 1rem;scroll-margin-top:84px}
 .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:700;letter-spacing:.22em;
   text-transform:uppercase;color:var(--faint);margin-bottom:1rem}
@@ -129,7 +129,7 @@ h2{font-family:var(--disp);font-size:clamp(1.7rem,4vw,2.5rem);font-weight:800;le
 h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lede{color:var(--muted);font-size:1.12rem;max-width:44rem;margin-bottom:2rem}
 .lede strong{color:var(--ink)}
-.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:960px;margin:0 auto}
+.hero{position:relative;z-index:1;text-align:center;padding:5.5rem 1.25rem 3.5rem;max-width:1280px;margin:0 auto}
 .badge{display:inline-flex;align-items:center;gap:.55rem;font-size:.78rem;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);
   padding:.55rem 1.1rem;border-radius:999px;margin-bottom:1.6rem}
@@ -186,12 +186,12 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .kv .k{flex:0 0 auto;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
   padding:.3rem .7rem;border-radius:8px;margin-top:.25rem}
 .kv .k.s{background:rgba(124,199,255,.12);color:var(--sky);border:1px solid rgba(124,199,255,.35)}
-.kv .k.t{background:rgba(10, 246, 217,.10);color:var(--teal);border:1px solid rgba(10, 246, 217,.35)}
-.kv .k.o{background:rgba(251,146,60,.12);color:var(--org);border:1px solid rgba(251,146,60,.35)}
+.kv .k.t{background:rgba(10,32,246,.10);color:var(--teal);border:1px solid rgba(10,32,246,.35)}
+.kv .k.o{background:rgba(250,197,61,.12);color:var(--org);border:1px solid rgba(250,197,61,.35)}
 .kv .k.a{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.35)}
-.kv .k.g{background:rgba(251,113,133,.12);color:var(--rose);border:1px solid rgba(251,113,133,.35)}
+.kv .k.g{background:rgba(113,251,234,.12);color:var(--rose);border:1px solid rgba(113,251,234,.35)}
 .kv p{font-size:.99rem}
-.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(21, 128, 61,.10),transparent 70%),#090b15;
+.diagram{background:radial-gradient(600px 300px at 50% 0%,rgba(128,98,21,.10),transparent 70%),#090b15;
   border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;margin:0 0 1.4rem;overflow:hidden}
 .diagram svg{display:block;width:100%;height:auto}
 .diagram .cap{text-align:center;color:var(--faint);font-size:.85rem;margin-top:.9rem;letter-spacing:.03em}
@@ -208,7 +208,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ebar .row .v{font-size:.88rem;color:var(--faint);font-variant-numeric:tabular-nums}
 .ebar .track{height:14px;background:rgba(255,255,255,.06);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
 .ebar .fill{height:100%;width:0;border-radius:999px;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
-.in .ebar .fill{width:var(--w)}
+.ebar.in .fill{width:var(--w)}
 .ebar .note{font-size:.85rem;color:var(--faint);margin-top:.45rem}
 .anec-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
 @media(max-width:720px){.anec-grid{grid-template-columns:1fr}}
@@ -226,6 +226,29 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .ulegend{display:flex;align-items:center;gap:.75rem;margin:0 0 1.5rem;padding:.85rem 1.15rem;border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.93rem}
 .ulegend strong{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){.udot::after{animation:none;opacity:.35;transform:scale(.8)}}
+/* --- layman-friendly inline example tiles: floating theme-green pulsing dot (distinct from amber anecdote dots) --- */
+.layman{position:relative;margin:1.25rem 0;padding:.85rem 1.1rem .85rem 1.3rem;border:1px solid var(--line);border-left:3px solid var(--sky);border-radius:12px;background:rgba(223,184,83,.055);color:var(--muted);font-size:.93rem;line-height:1.55}
+.layman p{margin:0}
+.layman strong{color:var(--ink)}
+.ldot{position:absolute;top:-7px;left:-7px;width:14px;height:14px;border-radius:50%;background:var(--sky);box-shadow:0 0 12px rgba(223,184,83,.75)}
+.ldot::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--sky);animation:ldotPulse 2.4s ease-out infinite}
+@keyframes ldotPulse{0%{transform:scale(.55);opacity:.9}70%{opacity:.25}100%{transform:scale(1.3);opacity:0}}
+@media (prefers-reduced-motion:reduce){.ldot::after{animation:none;opacity:.35;transform:scale(.8)}}
+[data-theme="light"] .layman{background:rgba(21,31,128,.07)}
+/* --- evidence-tier badges for the Benefits chapter (reuses .scard frame) --- */
+.lvl-est .level{background:rgba(223,184,83,.12);color:var(--sky);border:1px solid rgba(223,184,83,.45)}
+.lvl-emerg .level{background:rgba(130,139,231,.10);color:var(--cyan);border:1px solid rgba(130,139,231,.45)}
+.lvl-comm .level{background:rgba(251,191,36,.10);color:var(--amber);border:1px solid rgba(251,191,36,.45)}
+.scard ul{list-style:none;display:grid;gap:.6rem;margin-top:.9rem;padding:0}
+.scard li{color:var(--muted);font-size:.95rem;padding-left:1.5rem;position:relative;line-height:1.6}
+.scard li::before{content:"▸";position:absolute;left:0;color:var(--sky);font-weight:800}
+.scard li strong{color:var(--ink)}
+.tier{margin-bottom:1.1rem}
+.tier .udot{margin-left:.5rem;vertical-align:baseline}
+.fit-a{background:rgba(223,184,83,.06);border-color:rgba(223,184,83,.35)}
+.fit-b{background:rgba(251,191,36,.06);border-color:rgba(251,191,36,.35)}
+.fit-a h3{color:var(--sky)}
+.fit-b h3{color:var(--amber)}
 .anec-head .thumb{flex:0 0 auto;width:54px;height:54px;border-radius:14px;border:1px solid var(--line)}
 .anec-head h4{margin-bottom:0}
 .anec p{color:var(--muted);font-size:.95rem}
@@ -243,8 +266,8 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .scard p{color:var(--muted);font-size:.95rem}
 .scard p strong{color:var(--ink)}
 .lvl-known .level{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.4)}
-.lvl-theory .level{background:rgba(251,146,60,.1);color:var(--org);border:1px solid rgba(251,146,60,.4)}
-.lvl-unknown .level{background:rgba(251,113,133,.1);color:var(--rose);border:1px solid rgba(251,113,133,.4)}
+.lvl-theory .level{background:rgba(250,197,61,.1);color:var(--org);border:1px solid rgba(250,197,61,.4)}
+.lvl-unknown .level{background:rgba(113,251,234,.1);color:var(--rose);border:1px solid rgba(113,251,234,.4)}
 .gloss{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
 .g-item{border-bottom:1px solid var(--line)}
 .g-item:last-child{border-bottom:none}
@@ -265,10 +288,9 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 @keyframes gaBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @keyframes gaTilt{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg)}}
 .g-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
-.g-a .gsci,.g-a .gex{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
-.g-a .gsci strong,.g-a .gex strong{color:var(--ink)}
+.g-a .gsci{padding:0 1.4rem 1rem;color:var(--muted);font-size:.95rem}
+.g-a .gsci strong{color:var(--ink)}
 .gslabel{display:block;font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:.35rem}
-.g-a .gex{margin:0 1.4rem 1rem;padding:0 0 0 1rem;border-left:2px solid var(--line)}
 .g-a .plain{margin:0 1.4rem 1.3rem;background:rgba(255,255,255,.035);border:1px dashed rgba(255,255,255,.22);
   border-radius:12px;padding:1rem 1.2rem;font-size:.96rem;color:var(--muted)}
 .g-a .plain b{color:var(--ink)}
@@ -281,7 +303,7 @@ h2 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .take h4{font-size:1.05rem;font-weight:800;margin-bottom:.4rem}
 .take p{color:var(--muted);font-size:.95rem}
 .take p strong{color:var(--ink)}
-.limits{background:rgba(251,113,133,.05);border:1px solid rgba(251,113,133,.3);border-radius:var(--radius);
+.limits{background:rgba(113,251,234,.05);border:1px solid rgba(113,251,234,.3);border-radius:var(--radius);
   padding:1.4rem 1.6rem;margin-bottom:1.6rem}
 .limits h3{font-family:var(--disp);font-size:1.2rem;font-weight:800;margin-bottom:.7rem;color:var(--rose)}
 .limits ul{list-style:none;display:grid;gap:.6rem}
@@ -322,7 +344,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .reveal{opacity:1;transform:none}
-  .in .ebar .fill{transition:none}
+  .ebar.in .fill{transition:none}
 }
 
 /* --- ambient motion additions: subtle, additive, non-intrusive --- */
@@ -333,6 +355,7 @@ table.trial tr td:first-child{color:var(--ink);font-weight:600}
 .seqr2{animation:seqGlow 4.5s ease-in-out .9s infinite}
 .seqr3{animation:seqGlow 4.5s ease-in-out 1.8s infinite}
 .flowseq{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
+.flowseq1{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out infinite}
 .flowseq2{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out .9s infinite}
 .flowseq3{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 4.5s ease-in-out 1.8s infinite}
 
@@ -348,7 +371,7 @@ mini-poll { display: block; }
   border-radius: 18px;
   background:
     linear-gradient(var(--card, #0d1020), var(--card, #0d1020)) padding-box,
-    linear-gradient(135deg, var(--mpc1, #fdba74), var(--mpc2, #a3e635)) border-box;
+    linear-gradient(135deg, var(--mpc1, #fbd676), var(--mpc2, #a3e635)) border-box;
   font-family: inherit;
   overflow: hidden;
 }
@@ -363,8 +386,8 @@ mini-poll { display: block; }
 .mpoll-teaser:focus-visible { outline: 2px solid var(--amber, #fbbf24); outline-offset: -2px; }
 .mpoll-teaser-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
-  background: var(--mpc1, #fdba74);
-  box-shadow: 0 0 10px var(--mpc1, #fdba74);
+  background: var(--mpc1, #fbd676);
+  box-shadow: 0 0 10px var(--mpc1, #fbd676);
   animation: mpulse 2.4s ease-in-out infinite;
 }
 @keyframes mpulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
@@ -398,7 +421,7 @@ mini-poll { display: block; }
   display: flex; align-items: center; justify-content: center; gap: .6rem;
   max-width: 620px; margin: 0 auto 1.4rem; padding: .6rem 1.2rem;
   border-radius: 999px; font-size: .82rem; font-weight: 700; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
 }
 .mpoll-topbanner-dot {
   flex: 0 0 auto; width: 8px; height: 8px; border-radius: 50%;
@@ -428,7 +451,7 @@ mini-poll { display: block; }
   display: block; width: 100%; margin-top: .9rem; padding: .8rem;
   border: 0; border-radius: 12px; cursor: pointer;
   font-size: 1rem; font-weight: 800; color: #0a0c14;
-  background: linear-gradient(100deg, var(--acc1, #fdba74), var(--acc2, #a3e635));
+  background: linear-gradient(100deg, var(--acc1, #fbd676), var(--acc2, #a3e635));
   transition: transform .15s, opacity .15s;
 }
 .mpoll-vote:hover:not(:disabled), .mpoll-again:hover { transform: translateY(-1px); }
@@ -450,7 +473,7 @@ mini-poll { display: block; }
 }
 .mpoll-fill {
   height: 100%; width: 0; border-radius: 999px;
-  background: linear-gradient(90deg, var(--acc1, #fdba74), var(--acc2, #a3e635), var(--acc3, #fb923c));
+  background: linear-gradient(90deg, var(--acc1, #fbd676), var(--acc2, #a3e635), var(--acc3, #fac53d));
   transition: width .9s cubic-bezier(.22,.8,.3,1);
 }
 .mpoll-row.mine .mpoll-fill { box-shadow: 0 0 10px rgba(251,191,36,.45); }
@@ -484,13 +507,85 @@ mini-poll { display: block; }
 .scrollcue{margin-top:3rem;color:var(--faint);font-size:.85rem;letter-spacing:.2em;text-transform:uppercase;animation:bob 2.6s ease-in-out infinite}
 #dots{overflow:hidden}
 
+
+/* ---- TA1 enhancement: new diagrams, A-vs-B, evidence contrast ---- */
+.bridge{max-width:56rem;margin:0 auto 1.4rem;color:var(--muted);font-size:1.02rem;line-height:1.75}
+.bridge p{margin:0}
+.bridge p strong{color:var(--ink)}
+.stg{transform-box:fill-box;transform-origin:center;animation:stg 5s ease-in-out infinite}
+.stg1{animation-delay:0s}.stg2{animation-delay:1s}.stg3{animation-delay:2s}.stg4{animation-delay:3s}.stg5{animation-delay:4s}.stg6{animation-delay:5s}.stg7{animation-delay:6s}
+@keyframes stg{0%,100%{opacity:.5;transform:scale(1)}22%{opacity:1;transform:scale(1.08)}44%{opacity:.5;transform:scale(1)}}
+.flow4{stroke-dasharray:6 7;animation:dashmove 1.6s linear infinite,seqGlow 5s ease-in-out infinite}
+.fl1{animation-delay:0s}.fl2{animation-delay:1s}.fl3{animation-delay:2s}.fl4{animation-delay:3s}.fl5{animation-delay:4s}
+.trav{animation:trav 4s ease-in-out infinite}
+.trav.d1{animation-delay:0s}.trav.d2{animation-delay:1.3s}.trav.d3{animation-delay:2.6s}
+@keyframes trav{0%{transform:translateX(0);opacity:0}14%{opacity:1}78%{opacity:1}100%{transform:translateX(var(--dx,150px));opacity:0}}
+.fall{animation:fall 4s ease-in infinite}
+.fall.d1{animation-delay:0s}.fall.d2{animation-delay:1.3s}.fall.d3{animation-delay:2.6s}
+@keyframes fall{0%{transform:translateY(0);opacity:0}18%{opacity:1}80%{opacity:1}100%{transform:translateY(150px);opacity:0}}
+.breath{transform-box:fill-box;transform-origin:center;animation:breath 4.5s ease-in-out infinite}
+.b1{animation-delay:0s}.b2{animation-delay:.6s}.b3{animation-delay:1.2s}
+@keyframes breath{0%,100%{transform:scale(1)}50%{transform:scale(1.22)}}
+.tilt{transform-box:fill-box;transform-origin:center;animation:tilt 6s ease-in-out infinite}
+@keyframes tilt{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.rise{animation:rise 4s ease-in infinite}
+.rise.d1{animation-delay:0s}.rise.d2{animation-delay:1.3s}.rise.d3{animation-delay:2.6s}
+@keyframes rise{0%{transform:translateY(0);opacity:0}20%{opacity:.9}100%{transform:translateY(-46px);opacity:0}}
+.patrol{animation:patrol 7s ease-in-out infinite}
+@keyframes patrol{0%,100%{transform:translateX(0)}50%{transform:translateX(620px)}}
+.sweep{animation:sweep 7s ease-in-out infinite}
+@keyframes sweep{0%,100%{opacity:.08}50%{opacity:.32}}
+.vsgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-bottom:1.4rem}
+@media(max-width:860px){.vsgrid{grid-template-columns:1fr}}
+.vscard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem 1.5rem;position:relative;overflow:hidden}
+.vscard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);opacity:.7}
+.vs-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1rem}
+.vs-badge{flex:0 0 auto;width:2.4rem;height:2.4rem;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:#0a0c14;background:var(--grad)}
+.vs-badge.b2{background:linear-gradient(135deg,#828be7,#2a35a2)}
+.vs-badge.b3{background:linear-gradient(135deg,#fbbf24,#f5b40b)}
+.vs-badge.b4{background:linear-gradient(135deg,#dfb853,#828be7)}
+.vscard h3{font-size:1.12rem;margin:0;color:var(--ink)}
+.vscard h3 small{display:block;font-size:.82rem;color:var(--faint);font-weight:600;margin-top:.15rem}
+.vscard dl{margin:0;display:grid;gap:.65rem}
+.vscard dl>div{display:grid;grid-template-columns:9.5rem 1fr;gap:.8rem;align-items:start}
+.vscard dt{font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);padding-top:.2rem}
+.vscard dd{margin:0;color:var(--muted);font-size:.94rem;line-height:1.6}
+.vscard dd strong{color:var(--ink)}
+@media(max-width:560px){.vscard dl>div{grid-template-columns:1fr;gap:.15rem}}
+.doesdont{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin:1.6rem 0}
+@media(max-width:720px){.doesdont{grid-template-columns:1fr}}
+.dd-col{border-radius:var(--radius);padding:1.4rem 1.5rem;border:1px solid var(--line)}
+.dd-col.does{background:rgba(223,184,83,.06);border-color:rgba(223,184,83,.35)}
+.dd-col.doesnt{background:rgba(113,251,234,.06);border-color:rgba(113,251,234,.35)}
+.dd-col h3{margin-bottom:.9rem;font-size:1.08rem}
+.dd-col.does h3{color:#dfb853}
+.dd-col.doesnt h3{color:#71fbea}
+[data-theme="light"] .dd-col.does h3{color:#151f80}
+[data-theme="light"] .dd-col.doesnt h3{color:#1de1c8}
+.dd-col ul{list-style:none;display:grid;gap:.6rem;margin:0;padding:0}
+.dd-col li{color:var(--muted);font-size:.96rem;padding-left:1.5rem;position:relative;line-height:1.6}
+.dd-col li::before{position:absolute;left:0;top:.1rem;font-weight:800}
+.dd-col.does li::before{content:"\2713";color:#dfb853}
+.dd-col.doesnt li::before{content:"\2715";color:#71fbea}
+.dd-col li strong{color:var(--ink)}
+.ev-h{font-size:1.25rem;margin:1.8rem 0 .9rem;color:var(--ink);letter-spacing:.02em}
+.evrow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.9rem}
+@media(max-width:720px){.evrow{grid-template-columns:1fr}}
+.ev-a,.ev-b{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.15rem}
+.ev-a{border-left:3px solid var(--amber)}
+.ev-b{border-left:3px solid var(--sky)}
+.ev-tag{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.35rem}
+.ev-a .ev-tag{color:var(--amber)}
+.ev-b .ev-tag{color:var(--sky)}
+.ev-a p,.ev-b p{margin:0;color:var(--muted);font-size:.93rem;line-height:1.65}
+.ev-a p strong,.ev-b p strong{color:var(--ink)}
 </style>
 </head>
 <body>
 <svg class="sr-only" aria-hidden="true" focusable="false">
   <defs>
     <linearGradient id="triGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#53df86"/><stop offset="50%" stop-color="#66e292"/><stop offset="100%" stop-color="#2aa257"/>
+      <stop offset="0%" stop-color="#dfb853"/><stop offset="50%" stop-color="#66e2d2"/><stop offset="100%" stop-color="#2a35a2"/>
     </linearGradient>
   </defs>
 </svg>
@@ -515,14 +610,17 @@ mini-poll { display: block; }
   <a href="#ch2"><span class="n">02</span>Origin Story</a>
   <a href="#ch3"><span class="n">03</span>How It Might Work</a>
   <a href="#ch4"><span class="n">04</span>Evidence Check</a>
-  <a href="#ch5"><span class="n">05</span>What People Say</a>
+  <a href="#ch5"><span class="n">05</span>Community Reports</a>
   <a href="#ch6"><span class="n">06</span>Risks & Unknowns</a>
-  <a href="#ch7"><span class="n">07</span>Glossary</a>
-  <a href="#ch8"><span class="n">08</span>Takeaways</a>
+  <a href="#ch7"><span class="n">07</span>Head to Head</a>
+  <a href="#ch8"><span class="n">08</span>Potential Benefits</a>
+  <a href="#ch9"><span class="n">09</span>Who It May Suit</a>
+  <a href="#ch10"><span class="n">10</span>Understanding Terminology</a>
+  <a href="#ch11"><span class="n">11</span>Takeaways</a>
   <div class="mini"><span>Read</span><span id="tocPct">0%</span></div>
   <div class="mini-bar"><i id="tocBar"></i></div>
 </aside>
-<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Glossary</a><a href="#ch8">08 · Takeaways</a></div></nav>
+<nav class="chapters" aria-label="Chapters"><div class="rail" id="rail"><a href="#ch1">01 · Peptide</a><a href="#ch2">02 · Origin</a><a href="#ch3">03 · Mechanism</a><a href="#ch4">04 · Evidence</a><a href="#ch5">05 · Reports</a><a href="#ch6">06 · Risks</a><a href="#ch7">07 · Versus</a><a href="#ch8">08 · Benefits</a><a href="#ch9">09 · Who Suits</a><a href="#ch10">10 · Terminology</a><a href="#ch11">11 · Takeaways</a></div></nav>
 
 <header class="hero">
   <div class="badge"><span class="dot"></span>28-amino-acid thymus peptide · immune research</div>
@@ -549,14 +647,14 @@ mini-poll { display: block; }
   <h2>What <span class="hl">Thymosin Alpha-1</span> actually is</h2>
   <p class="lede">Not a vitamin, not an antibody — a <strong>short chain of 28 amino acids</strong> that your thymus gland makes as part of a bigger protein. Scientists isolated it, learned to synthesize it, and have been testing what it does to immunity ever since.</p>
   <div class="diagram reveal">
-    <svg viewBox="0 0 640 210" role="img" aria-label="Thymosin Alpha-1 chain of 28 amino acids with acetylated N-terminus">
+    <svg viewBox="0 0 640 232" role="img" aria-label="Thymosin Alpha-1 chain of 28 amino acids with acetylated N-terminus">
       <text x="20" y="24" fill="#a9b1c9" font-size="13" font-weight="700" letter-spacing="2">THYMOSIN ALPHA-1 · 28 AMINO ACIDS</text>
-      <g><circle cx="40.0" cy="93" r="8.0" fill="#2aa257" stroke="#53df86" stroke-width="2"/><circle cx="60.7" cy="93" r="8.0" fill="#2aa257" stroke="#53df86" stroke-width="2"/><circle cx="81.5" cy="93" r="5.5" fill="#2a3352"/><circle cx="102.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="123.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="143.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="164.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="185.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="205.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="226.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="247.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="268.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="288.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="309.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="330.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="351.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="371.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="392.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="413.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="434.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="454.8" cy="93" r="5.5" fill="#2a3352"/><circle cx="475.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="496.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="517.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="537.8" cy="93" r="5.5" fill="#2a3352"/><circle cx="558.5" cy="93" r="5.5" fill="#2a3352"/><circle cx="579.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g>
-      <rect x="24" y="60" width="53" height="66" rx="12" fill="none" stroke="#2aa257" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
-      <text x="320" y="152" fill="#53df86" font-size="13" font-weight="800" text-anchor="middle">ACETYL CAP · SHIELDS THE N-TERMINUS</text>
+      <g><circle cx="40.0" cy="93" r="8.0" fill="#2a35a2" stroke="#dfb853" stroke-width="2"/><circle cx="60.7" cy="93" r="8.0" fill="#2a35a2" stroke="#dfb853" stroke-width="2"/><circle cx="81.5" cy="93" r="5.5" fill="#2a3352"/><circle cx="102.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="123.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="143.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="164.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="185.2" cy="93" r="5.5" fill="#2a3352"/><circle cx="205.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="226.7" cy="93" r="5.5" fill="#2a3352"/><circle cx="247.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="268.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="288.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="309.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="330.4" cy="93" r="5.5" fill="#2a3352"/><circle cx="351.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="371.9" cy="93" r="5.5" fill="#2a3352"/><circle cx="392.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="413.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="434.1" cy="93" r="5.5" fill="#2a3352"/><circle cx="454.8" cy="93" r="5.5" fill="#2a3352"/><circle cx="475.6" cy="93" r="5.5" fill="#2a3352"/><circle cx="496.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="517.0" cy="93" r="5.5" fill="#2a3352"/><circle cx="537.8" cy="93" r="5.5" fill="#2a3352"/><circle cx="558.5" cy="93" r="5.5" fill="#2a3352"/><circle cx="579.3" cy="93" r="5.5" fill="#2a3352"/><circle cx="600.0" cy="93" r="5.5" fill="#2a3352"/></g>
+      <rect x="24" y="60" width="53" height="66" rx="12" fill="none" stroke="#2a35a2" stroke-width="2.5" stroke-dasharray="7 5" class="flow"/>
+      <text x="320" y="152" fill="#dfb853" font-size="13" font-weight="800" text-anchor="middle">ACETYL CAP · SHIELDS THE N-TERMINUS</text>
       <text x="320" y="172" fill="#7f88a5" font-size="12" text-anchor="middle">a small chemical cap that protects the chain</text>
-      <rect x="170" y="186" width="300" height="4" rx="2" fill="#66e292" opacity=".8"/>
-      <text x="320" y="206" fill="#66e292" font-size="12" font-weight="700" text-anchor="middle">28 AMINO ACIDS · CUT FROM PROTHYMOSIN ALPHA</text>
+      <rect x="170" y="186" width="300" height="4" rx="2" fill="#66e2d2" opacity=".8"/>
+      <text x="320" y="206" fill="#66e2d2" font-size="12" font-weight="700" text-anchor="middle">28 AMINO ACIDS · CUT FROM PROTHYMOSIN ALPHA</text>
       <text x="320" y="222" fill="#7f88a5" font-size="11" text-anchor="middle">SDAAVDTSSEITTKDLKEKKEVVEEAEN</text>
     </svg>
     <div class="cap">Each bead is one amino acid. The highlighted tip carries the acetyl cap; the whole chain is sliced from a larger thymus protein.</div>
@@ -579,21 +677,21 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 220" role="img" aria-label="Timeline of Thymosin Alpha-1 research">
       <line x1="70" y1="120" x2="570" y2="120" stroke="#3a4160" stroke-width="3"/>
-<circle cx="70" cy="120" r="16" fill="none" stroke="#53df86" stroke-width="2" class="ringp"/>
-        <circle cx="70" cy="120" r="8" fill="#53df86"/>
-        <text x="70" y="88" fill="#53df86" font-size="12" font-weight="800" text-anchor="middle">1970s</text>
+<circle cx="70" cy="120" r="16" fill="none" stroke="#dfb853" stroke-width="2" class="ringp"/>
+        <circle cx="70" cy="120" r="8" fill="#dfb853"/>
+        <text x="70" y="88" fill="#dfb853" font-size="12" font-weight="800" text-anchor="middle">1970s</text>
         <text x="70" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Thymosin fraction 5</text>
-<circle cx="237" cy="120" r="16" fill="none" stroke="#66e292" stroke-width="2" class="ringp"/>
-        <circle cx="237" cy="120" r="8" fill="#66e292"/>
-        <text x="237" y="88" fill="#66e292" font-size="12" font-weight="800" text-anchor="middle">Late 1970s</text>
+<circle cx="237" cy="120" r="16" fill="none" stroke="#66e2d2" stroke-width="2" class="ringp"/>
+        <circle cx="237" cy="120" r="8" fill="#66e2d2"/>
+        <text x="237" y="88" fill="#66e2d2" font-size="12" font-weight="800" text-anchor="middle">Late 1970s</text>
         <text x="237" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Alpha-1 isolated</text>
-<circle cx="403" cy="120" r="16" fill="none" stroke="#2aa257" stroke-width="2" class="ringp"/>
-        <circle cx="403" cy="120" r="8" fill="#2aa257"/>
-        <text x="403" y="88" fill="#2aa257" font-size="12" font-weight="800" text-anchor="middle">1990s</text>
+<circle cx="403" cy="120" r="16" fill="none" stroke="#2a35a2" stroke-width="2" class="ringp"/>
+        <circle cx="403" cy="120" r="8" fill="#2a35a2"/>
+        <text x="403" y="88" fill="#2a35a2" font-size="12" font-weight="800" text-anchor="middle">1990s</text>
         <text x="403" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Hepatitis trials</text>
-<circle cx="570" cy="120" r="16" fill="none" stroke="#53df86" stroke-width="2" class="ringp"/>
-        <circle cx="570" cy="120" r="8" fill="#53df86"/>
-        <text x="570" y="88" fill="#53df86" font-size="12" font-weight="800" text-anchor="middle">2000s–now</text>
+<circle cx="570" cy="120" r="16" fill="none" stroke="#dfb853" stroke-width="2" class="ringp"/>
+        <circle cx="570" cy="120" r="8" fill="#dfb853"/>
+        <text x="570" y="88" fill="#dfb853" font-size="12" font-weight="800" text-anchor="middle">2000s–now</text>
         <text x="570" y="162" fill="#a9b1c9" font-size="11" text-anchor="middle">Sepsis, vaccines, COVID</text>
       <text x="320" y="208" fill="#7f88a5" font-size="12" text-anchor="middle">From ground-up thymus glands to modern immune trials.</text>
     </svg>
@@ -615,24 +713,24 @@ mini-poll { display: block; }
   <div class="diagram reveal">
     <svg viewBox="0 0 640 240" role="img" aria-label="Four-step proposed mechanism of Thymosin Alpha-1">
       <g font-size="13" font-weight="800" text-anchor="middle">
-        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#53df86" stroke-width="2"/>
-        <circle cx="84" cy="86" r="18" fill="none" stroke="#53df86" stroke-width="2" class="ringp"/>
-        <text x="84" y="118" fill="#53df86">1 · SENSE</text>
+        <rect x="20" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#dfb853" stroke-width="2"/>
+        <circle cx="84" cy="86" r="18" fill="none" stroke="#dfb853" stroke-width="2" class="ringp"/>
+        <text x="84" y="118" fill="#dfb853">1 · SENSE</text>
         <text x="84" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Dendritic cells</text>
         <text x="84" y="160" fill="#a9b1c9" font-size="11" font-weight="600">wake up</text>
-        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#66e292" stroke-width="2"/>
-        <circle cx="236" cy="86" r="18" fill="none" stroke="#66e292" stroke-width="2" class="ringp"/>
-        <text x="236" y="118" fill="#66e292">2 · SIGNAL</text>
+        <rect x="172" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#66e2d2" stroke-width="2"/>
+        <circle cx="236" cy="86" r="18" fill="none" stroke="#66e2d2" stroke-width="2" class="ringp"/>
+        <text x="236" y="118" fill="#66e2d2">2 · SIGNAL</text>
         <text x="236" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Messenger chemicals</text>
         <text x="236" y="160" fill="#a9b1c9" font-size="11" font-weight="600">shift tone</text>
-        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#2aa257" stroke-width="2"/>
-        <circle cx="388" cy="86" r="18" fill="none" stroke="#2aa257" stroke-width="2" class="ringp"/>
-        <text x="388" y="118" fill="#2aa257">3 · MOBILIZE</text>
+        <rect x="324" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#2a35a2" stroke-width="2"/>
+        <circle cx="388" cy="86" r="18" fill="none" stroke="#2a35a2" stroke-width="2" class="ringp"/>
+        <text x="388" y="118" fill="#2a35a2">3 · MOBILIZE</text>
         <text x="388" y="144" fill="#a9b1c9" font-size="11" font-weight="600">T cells get</text>
         <text x="388" y="160" fill="#a9b1c9" font-size="11" font-weight="600">coaching</text>
-        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#53df86" stroke-width="2"/>
-        <circle cx="540" cy="86" r="18" fill="none" stroke="#53df86" stroke-width="2" class="ringp"/>
-        <text x="540" y="118" fill="#53df86">4 · BALANCE</text>
+        <rect x="476" y="60" width="128" height="120" rx="14" fill="#151b36" stroke="#dfb853" stroke-width="2"/>
+        <circle cx="540" cy="86" r="18" fill="none" stroke="#dfb853" stroke-width="2" class="ringp"/>
+        <text x="540" y="118" fill="#dfb853">4 · BALANCE</text>
         <text x="540" y="144" fill="#a9b1c9" font-size="11" font-weight="600">Inflammation stays</text>
         <text x="540" y="160" fill="#a9b1c9" font-size="11" font-weight="600">in lane</text>
       </g>
@@ -644,7 +742,162 @@ mini-poll { display: block; }
       <text x="320" y="220" fill="#7f88a5" font-size="12" text-anchor="middle">The proposed chain — sense, signal, mobilize, balance. Immune effects measured in trial blood samples, not just dishes.</text>
     </svg>
     <div class="cap">The proposed chain — sense, signal, mobilize, balance. Immune effects measured in trial blood samples, not just dishes.</div>
-  </div>  <div class="kv reveal"><span class="k s">Scouts first</span><p>The peptide nudges <strong>dendritic cells</strong> — the immune system’s scouts — partly via toll-like receptors, the alarm buttons of innate immunity.</p></div>
+  </div><div class="diagram reveal">
+    <svg viewBox="0 0 1200 330" role="img" aria-label="Immune response sequence influenced by Thymosin Alpha-1">
+      <g font-size="15" font-weight="800" text-anchor="middle">
+        <text x="110" y="66" fill="#dfb853">1</text><text x="355" y="66" fill="#66e2d2">2</text><text x="600" y="66" fill="#2a35a2">3</text><text x="845" y="66" fill="#828be7">4</text><text x="1090" y="66" fill="#dfb853">5</text>
+      </g>
+            <g class="stg stg1"><circle cx="95" cy="130" r="10" fill="#dfb853"/><circle cx="125" cy="130" r="10" fill="#66e2d2"/><circle cx="110" cy="152" r="10" fill="#2a35a2"/><circle cx="88" cy="155" r="8" fill="#828be7"/><circle cx="132" cy="155" r="8" fill="#dfb853"/></g>
+      <g class="stg stg2"><circle cx="355" cy="140" r="32" fill="#151b36" stroke="#66e2d2" stroke-width="3"/><line x1="387.0" y1="140.0" x2="407.0" y2="140.0" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="377.6" y1="162.6" x2="391.8" y2="176.8" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="355.0" y1="172.0" x2="355.0" y2="192.0" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="332.4" y1="162.6" x2="318.2" y2="176.8" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="323.0" y1="140.0" x2="303.0" y2="140.0" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="332.4" y1="117.4" x2="318.2" y2="103.2" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="355.0" y1="108.0" x2="355.0" y2="88.0" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/>
+        <line x1="377.6" y1="117.4" x2="391.8" y2="103.2" stroke="#66e2d2" stroke-width="3" stroke-linecap="round"/></g>
+      <g class="stg stg3"><circle cx="575" cy="130" r="20" fill="#151b36" stroke="#2a35a2" stroke-width="3"/><circle cx="625" cy="130" r="20" fill="#151b36" stroke="#2a35a2" stroke-width="3"/><circle cx="600" cy="162" r="20" fill="#151b36" stroke="#2a35a2" stroke-width="3"/></g>
+      <g class="stg stg4"><circle cx="845" cy="140" r="30" fill="#151b36" stroke="#828be7" stroke-width="3"/><circle cx="836" cy="132" r="4" fill="#828be7"/><circle cx="854" cy="132" r="4" fill="#828be7"/><circle cx="845" cy="148" r="4" fill="#828be7"/></g>
+      <g class="stg stg5"><path d="M1090,108 L1118,118 L1118,140 C1118,162 1104,176 1090,182 C1076,176 1062,162 1062,140 L1062,118 Z" fill="#151b36" stroke="#dfb853" stroke-width="3"/><path d="M1080,140 l8,8 l14,-16" stroke="#dfb853" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <g stroke="#7f88a5" stroke-width="2" fill="none">
+        <path d="M152 140 h161" class="flow4 fl1"/><path d="M397 140 h136" class="flow4 fl2"/><path d="M667 140 h136" class="flow4 fl3"/><path d="M887 140 h161" class="flow4 fl4"/>
+      </g>
+      <circle cx="152" cy="140" r="7" fill="#828be7" class="trav d1" style="--dx:160px"/>
+      <circle cx="397" cy="140" r="7" fill="#828be7" class="trav d2" style="--dx:135px"/>
+      <circle cx="667" cy="140" r="7" fill="#828be7" class="trav d3" style="--dx:135px"/>
+      <circle cx="887" cy="140" r="7" fill="#828be7" class="trav d1" style="--dx:160px"/>
+      <g font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">
+        <text x="110" y="222">Thymosin Alpha-1</text><text x="110" y="242">enters the scene</text>
+        <text x="355" y="222">Scout cells</text><text x="355" y="242">wake up</text>
+        <text x="600" y="222">T cells</text><text x="600" y="242">get coaching</text>
+        <text x="845" y="222">NK cells</text><text x="845" y="242">patrol harder</text>
+        <text x="1090" y="222">Response stays</text><text x="1090" y="242">balanced</text>
+      </g>
+    </svg>
+    <div class="cap">The immune response sequence — the peptide doesn&rsquo;t fight germs itself; it changes how immune cells behave, in order.</div>
+  </div>
+<div class="bridge reveal"><p>This is the core idea to hold onto: <strong>every step is coaching, not commanding</strong>. The peptide doesn&rsquo;t kill germs itself — it changes how immune cells talk to each other.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 360" role="img" aria-label="Toll-like receptor signaling visual">
+      <text x="60" y="56" font-size="15" font-weight="800" fill="#edf0f9" text-anchor="start">TLRs are the cell&rsquo;s alarm buttons</text>
+      <text x="1140" y="56" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="end">peptide drifts down</text>
+            <g class="stg stg1"><line x1="420" y1="220" x2="420" y2="172" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="420" y1="172" x2="400" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="420" y1="172" x2="440" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/></g>
+      <g class="stg stg2"><line x1="600" y1="220" x2="600" y2="172" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="600" y1="172" x2="580" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="600" y1="172" x2="620" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/></g>
+      <g class="stg stg3"><line x1="780" y1="220" x2="780" y2="172" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="780" y1="172" x2="760" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/><line x1="780" y1="172" x2="800" y2="140" stroke="#fbbf24" stroke-width="5" stroke-linecap="round"/></g>
+      <circle cx="420" cy="55" r="10" fill="#dfb853" class="fall d1"/>
+      <circle cx="600" cy="35" r="10" fill="#dfb853" class="fall d2"/>
+      <circle cx="780" cy="55" r="10" fill="#dfb853" class="fall d3"/>
+      <rect x="240" y="220" width="720" height="26" rx="13" fill="#151b36" stroke="#dfb853" stroke-width="2"/>
+      <text x="600" y="265" font-size="12" fill="#7f88a5" text-anchor="middle">dendritic cell surface</text>
+      <g stroke="#7f88a5" stroke-width="2" fill="none">
+        <path d="M420 246 v72" class="flow4 fl1"/><path d="M600 246 v72" class="flow4 fl2"/><path d="M780 246 v72" class="flow4 fl3"/>
+      </g>
+      <text x="600" y="346" font-size="12" fill="#7f88a5" text-anchor="middle">activation signal travels inward</text>
+    </svg>
+    <div class="cap">Toll-like receptor signaling — the proposed first step: the peptide nudges alarm-button receptors, and the cell passes the message inside.</div>
+  </div>
+<div class="bridge reveal"><p>Toll-like receptors are the immune system&rsquo;s <strong>smoke detectors</strong> — they sense trouble patterns and sound the alarm. The research suggests this peptide can press those buttons on dendritic cells.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 340" role="img" aria-label="Dendritic cell activation visual">
+      <circle cx="250" cy="150" r="55" fill="#151b36" stroke="#7f88a5" stroke-width="3"/>
+      <text x="250" y="245" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">resting scout</text>
+      <path d="M335 150 h130" stroke="#7f88a5" stroke-width="2" fill="none" class="flow4 fl1"/>
+      <circle cx="335" cy="150" r="7" fill="#828be7" class="trav d1" style="--dx:130px"/>
+      <circle cx="660" cy="150" r="55" fill="#151b36" stroke="#dfb853" stroke-width="3"/>
+      <line x1="660.0" y1="92.0" x2="660.0" y2="62.0" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b1"/>
+        <line x1="694.1" y1="103.1" x2="711.7" y2="78.8" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b2"/>
+        <line x1="715.2" y1="132.1" x2="743.7" y2="122.8" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b3"/>
+        <line x1="715.2" y1="167.9" x2="743.7" y2="177.2" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b1"/>
+        <line x1="694.1" y1="196.9" x2="711.7" y2="221.2" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b2"/>
+        <line x1="660.0" y1="208.0" x2="660.0" y2="238.0" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b3"/>
+        <line x1="625.9" y1="196.9" x2="608.3" y2="221.2" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b1"/>
+        <line x1="604.8" y1="167.9" x2="576.3" y2="177.2" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b2"/>
+        <line x1="604.8" y1="132.1" x2="576.3" y2="122.8" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b3"/>
+        <line x1="625.9" y1="103.1" x2="608.3" y2="78.8" stroke="#dfb853" stroke-width="4" stroke-linecap="round" class="breath b1"/>
+      <text x="660" y="245" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">activated &mdash; dendrites extend</text>
+      <path d="M775 150 h170" stroke="#7f88a5" stroke-width="2" fill="none" class="flow4 fl2"/>
+      <circle cx="775" cy="150" r="7" fill="#828be7" class="trav d2" style="--dx:170px"/>
+      <circle cx="1040" cy="150" r="40" fill="#151b36" stroke="#66e2d2" stroke-width="3"/>
+      <text x="1040" y="162" font-size="30" font-weight="800" fill="#66e2d2" text-anchor="middle">T</text>
+      <text x="1040" y="245" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">T cell gets the message</text>
+    </svg>
+    <div class="cap">Dendritic-cell activation — a resting scout grows branch-like arms and hands the signal to T cells.</div>
+  </div>
+<div class="bridge reveal"><p>An activated dendritic cell is a <strong>better messenger</strong> — it grows branch-like arms to grab trouble signals and present them to T cells.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 410" role="img" aria-label="T-cell and NK-cell involvement visual">
+      <text x="60" y="44" font-size="14" font-weight="800" fill="#dfb853" text-anchor="start">T CELLS &mdash; multiply &amp; specialize</text>
+      <g class="stg stg1"><circle cx="180" cy="130" r="34" fill="#151b36" stroke="#dfb853" stroke-width="3"/></g>
+      <path d="M234 130 h62" stroke="#7f88a5" stroke-width="2" fill="none" class="flow4 fl1"/>
+      <g class="stg stg2"><circle cx="350" cy="130" r="30" fill="#151b36" stroke="#66e2d2" stroke-width="3"/></g>
+      <g class="stg stg3"><circle cx="440" cy="130" r="30" fill="#151b36" stroke="#66e2d2" stroke-width="3"/></g>
+      <path d="M484 130 h62" stroke="#7f88a5" stroke-width="2" fill="none" class="flow4 fl2"/>
+      <g class="stg stg3"><circle cx="600" cy="130" r="24" fill="#151b36" stroke="#2a35a2" stroke-width="3"/></g>
+      <g class="stg stg4"><circle cx="680" cy="130" r="24" fill="#151b36" stroke="#2a35a2" stroke-width="3"/></g>
+      <g class="stg stg5"><circle cx="760" cy="130" r="24" fill="#151b36" stroke="#2a35a2" stroke-width="3"/></g>
+      <g class="stg stg1"><circle cx="840" cy="130" r="24" fill="#151b36" stroke="#2a35a2" stroke-width="3"/></g>
+      <g font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">
+        <text x="180" y="200">one cell</text><text x="395" y="200">divides</text><text x="720" y="200">an army of specialists</text>
+      </g>
+      <text x="60" y="254" font-size="14" font-weight="800" fill="#828be7" text-anchor="start">NK CELLS &mdash; patrol &amp; clear</text>
+      <rect x="60" y="280" width="1080" height="70" rx="35" fill="#0d1020" stroke="#2a35a2" stroke-width="2"/>
+      <g class="patrol">
+        <polygon points="166,315 340,285 340,345" fill="#dfb853" class="sweep"/>
+        <circle cx="140" cy="315" r="26" fill="#151b36" stroke="#828be7" stroke-width="3"/>
+        <circle cx="132" cy="308" r="4" fill="#828be7"/><circle cx="148" cy="308" r="4" fill="#828be7"/><circle cx="140" cy="322" r="4" fill="#828be7"/>
+      </g>
+      <text x="600" y="388" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">NK cells sweep for stressed or infected cells</text>
+    </svg>
+    <div class="cap">T cells and NK cells — the adaptive specialists multiply; the innate patrol keeps moving.</div>
+  </div>
+<div class="bridge reveal"><p>Two different workforces: <strong>T cells learn and specialize</strong> (the adaptive side), while <strong>NK cells patrol</strong> for stressed or infected cells (the innate side). The peptide is reported to influence both.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 360" role="img" aria-label="Cytokine signaling Th1 tilt visual">
+      <text x="600" y="60" font-size="15" font-weight="800" fill="#edf0f9" text-anchor="middle">The cytokine tone tilts &mdash; toward coordinated germ-fighting</text>
+      <g class="tilt">
+        <line x1="400" y1="200" x2="800" y2="200" stroke="#dfb853" stroke-width="6" stroke-linecap="round"/>
+        <line x1="460" y1="200" x2="460" y2="240" stroke="#7f88a5" stroke-width="3"/>
+        <ellipse cx="460" cy="250" rx="48" ry="10" fill="#151b36" stroke="#66e2d2" stroke-width="2"/>
+        <line x1="740" y1="200" x2="740" y2="240" stroke="#7f88a5" stroke-width="3"/>
+        <ellipse cx="740" cy="250" rx="48" ry="10" fill="#151b36" stroke="#7f88a5" stroke-width="2"/>
+        <circle cx="438" cy="232" r="7" fill="#828be7" class="rise d1"/>
+        <circle cx="460" cy="224" r="7" fill="#828be7" class="rise d2"/>
+        <circle cx="482" cy="232" r="7" fill="#828be7" class="rise d3"/>
+      </g>
+      <polygon points="582,302 618,302 600,206" fill="#7f88a5"/>
+      <text x="460" y="292" font-size="14" font-weight="800" fill="#66e2d2" text-anchor="middle">Th1-type signals</text>
+      <text x="460" y="312" font-size="12" fill="#a9b1c9" text-anchor="middle">germ-fighting coordination</text>
+      <text x="740" y="292" font-size="14" font-weight="800" fill="#7f88a5" text-anchor="middle">Th2-type signals</text>
+      <text x="740" y="312" font-size="12" fill="#a9b1c9" text-anchor="middle">other immune jobs</text>
+    </svg>
+    <div class="cap">Cytokine signaling — a tilt, not a flood. The proposed shift favors Th1-type coordination over blanket inflammation.</div>
+  </div>
+<div class="bridge reveal"><p>Cytokines are <strong>text messages between immune cells</strong>. The proposed effect is a tilt toward the Th1 flavor — coordinated germ-fighting — rather than a flood of everything.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 380" role="img" aria-label="Innate versus adaptive immunity relationship visual">
+      <g class="stg stg1"><circle cx="150" cy="190" r="44" fill="#151b36" stroke="#dfb853" stroke-width="3"/></g>
+      <circle cx="150" cy="190" r="44" fill="none" stroke="#dfb853" stroke-width="2" class="ringp"/>
+      <text x="150" y="202" font-size="26" font-weight="800" fill="#dfb853" text-anchor="middle">Ta1</text>
+      <text x="150" y="272" font-size="12" fill="#a9b1c9" text-anchor="middle">works at the bridge</text>
+      <text x="320" y="86" font-size="14" font-weight="800" fill="#dfb853" text-anchor="start">INNATE &mdash; fast &amp; broad</text>
+      <rect x="300" y="106" width="840" height="92" rx="46" fill="#0d1020" stroke="#2a35a2" stroke-width="2"/>
+            <g class="stg stg1"><circle cx="450" cy="152" r="26" fill="#151b36" stroke="#66e2d2" stroke-width="3"/></g>
+      <g class="stg stg2"><circle cx="650" cy="152" r="26" fill="#151b36" stroke="#66e2d2" stroke-width="3"/></g>
+      <g class="stg stg3"><circle cx="850" cy="152" r="26" fill="#151b36" stroke="#66e2d2" stroke-width="3"/></g>
+      <text x="1000" y="158" font-size="12" fill="#7f88a5" text-anchor="middle">first responders rush in</text>
+      <text x="320" y="256" font-size="14" font-weight="800" fill="#828be7" text-anchor="start">ADAPTIVE &mdash; precise &amp; lasting</text>
+      <rect x="300" y="276" width="840" height="92" rx="46" fill="#0d1020" stroke="#2a35a2" stroke-width="2"/>
+            <g class="stg stg2"><circle cx="450" cy="322" r="26" fill="#151b36" stroke="#dfb853" stroke-width="3"/></g>
+      <g class="stg stg3"><circle cx="650" cy="322" r="26" fill="#151b36" stroke="#dfb853" stroke-width="3"/></g>
+      <g class="stg stg4"><circle cx="850" cy="322" r="26" fill="#151b36" stroke="#dfb853" stroke-width="3"/></g>
+      <text x="1000" y="328" font-size="12" fill="#7f88a5" text-anchor="middle">specialists learn &amp; remember</text>
+      <line x1="196" y1="160" x2="300" y2="154" stroke="#7f88a5" stroke-width="2" class="flow4 fl1"/>
+      <line x1="196" y1="220" x2="300" y2="322" stroke="#7f88a5" stroke-width="2" class="flow4 fl2"/>
+    </svg>
+    <div class="cap">Innate vs adaptive — the fast bouncers and the trained specialists. The peptide is studied at the handoff between them.</div>
+  </div>
+<div class="bridge reveal"><p>Innate immunity is the <strong>fast bouncer</strong>; adaptive immunity is the <strong>trained specialist</strong>. This peptide is studied as something that works at the handoff between them.</p></div>
+  <div class="kv reveal"><span class="k s">Scouts first</span><p>The peptide nudges <strong>dendritic cells</strong> — the immune system’s scouts — partly via toll-like receptors, the alarm buttons of innate immunity.</p></div>
   <div class="kv reveal"><span class="k t">A tilt, not a flood</span><p>Cytokine output tilts toward <strong>Th1-type signals</strong> that coordinate germ-fighting, rather than flooding the body with inflammation.</p></div>
   <div class="kv reveal"><span class="k o">The modulator distinction</span><p>It’s an immune <strong>modulator, not a booster</strong> — the difference between a conductor and simply turning the volume up.</p></div><div class="plain reveal"><div class="plabel">Plain English</div><p>The pitch: <strong>sense → signal → mobilize → balance</strong>. Unusually for a peptide page, parts of this chain were measured in <strong>human trial blood samples</strong> — not just petri dishes.</p></div>
 </section>
@@ -658,14 +911,77 @@ mini-poll { display: block; }
   <span class="eyebrow"><span class="n">04</span>Evidence check</span>
   <h2>What the science <span class="hl">actually</span> supports</h2>
   <p class="lede">Dozens of trials exist — which is rare in peptide-land. But “studied a lot” and “proven” are different things.</p>
-    <div class="ebar"><div class="row"><span class="t">Chronic hepatitis B</span><span class="v">modest benefit in trials</span></div><div class="track"><div class="fill" style="--w:62%;background:linear-gradient(90deg,#66e292,#82e7a6)"></div></div><div class="note">Added to antivirals, it improved response rates in several trials — real signal, not a cure.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Vaccine response in older adults</span><span class="v">promising helper effect</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#53df86,#66e292)"></div></div><div class="note">Trials show stronger antibody responses when it’s given alongside flu vaccines in the elderly.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Sepsis</span><span class="v">mixed results</span></div><div class="track"><div class="fill" style="--w:38%;background:linear-gradient(90deg,#53df86,#2aa257)"></div></div><div class="note">Some trials suggested benefit; others showed little. Sepsis is notoriously hard to treat — nothing has a great record here.</div></div>
-  <div class="ebar"><div class="row"><span class="t">Hepatitis C</span><span class="v">weak</span></div><div class="track"><div class="fill" style="--w:22%;background:linear-gradient(90deg,#2aa257,#53df86)"></div></div><div class="note">Early interest faded as direct-acting antivirals arrived and outperformed everything.</div></div><div class="grid3">
+    <div class="ebar reveal"><div class="row"><span class="t">Chronic hepatitis B</span><span class="v">modest benefit in trials</span></div><div class="track"><div class="fill" style="--w:62%;background:linear-gradient(90deg,#66e2d2,#828be7)"></div></div><div class="note">Added to antivirals, it improved response rates in several trials — real signal, not a cure.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Vaccine response in older adults</span><span class="v">promising helper effect</span></div><div class="track"><div class="fill" style="--w:55%;background:linear-gradient(90deg,#dfb853,#66e2d2)"></div></div><div class="note">Trials show stronger antibody responses when it’s given alongside flu vaccines in the elderly.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Sepsis</span><span class="v">mixed results</span></div><div class="track"><div class="fill" style="--w:38%;background:linear-gradient(90deg,#dfb853,#2a35a2)"></div></div><div class="note">Some trials suggested benefit; others showed little. Sepsis is notoriously hard to treat — nothing has a great record here.</div></div>
+  <div class="ebar reveal"><div class="row"><span class="t">Hepatitis C</span><span class="v">weak</span></div><div class="track"><div class="fill" style="--w:22%;background:linear-gradient(90deg,#2a35a2,#dfb853)"></div></div><div class="note">Early interest faded as direct-acting antivirals arrived and outperformed everything.</div></div><div class="grid3">
     <div class="card sky reveal"><h3>What “modest” means</h3><p>In trials, benefits looked like <strong>better response rates, not cures</strong> — for example, more hepatitis B patients clearing markers when it was added to antivirals.</p></div>
     <div class="card teal reveal"><h3>The vaccine angle is newest</h3><p>The <strong>strongest modern signal</strong>: older adults mounted stronger flu-vaccine responses with it on board — immune coaching at its most practical.</p></div>
     <div class="card org reveal"><h3>Small trials, big questions</h3><p>Many trials were <strong>small by modern standards</strong>. Modest effects in small trials deserve replication before celebration.</p></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Honest summary: the <strong>hepatitis B and vaccine-helper signals are the most solid</strong> — everything else is thinner. And “solid” here means modest benefits in real trials, not miracles.</p></div>
+<div class="diagram reveal">
+    <svg viewBox="0 0 1200 400" role="img" aria-label="Clinical history timeline of Thymosin Alpha-1 research">
+            <line x1="60" y1="200" x2="1120" y2="200" stroke="#3a4160" stroke-width="4"/>
+      <g class="stg stg1"><circle cx="80" cy="200" r="13" fill="#dfb853"/></g>
+      <text x="80" y="132" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Thymus extracts studied</text>
+      <text x="80" y="154" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">1970s</text>
+      <g class="stg stg2"><circle cx="240" cy="200" r="13" fill="#66e2d2"/></g>
+      <text x="240" y="262" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Thymalfasin: 28-aa peptide</text>
+      <text x="240" y="284" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">synthesized · 1980s</text>
+      <g class="stg stg3"><circle cx="400" cy="200" r="13" fill="#dfb853"/></g>
+      <text x="400" y="110" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Hepatitis B trials</text>
+      <text x="400" y="132" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">30+ country approvals</text>
+      <text x="400" y="154" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">1990s–2000s</text>
+      <g class="stg stg4"><circle cx="560" cy="200" r="13" fill="#fbbf24"/></g>
+      <text x="560" y="262" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Hepatitis C interest fades</text>
+      <text x="560" y="284" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">new antivirals win · 2010s</text>
+      <g class="stg stg5"><circle cx="720" cy="200" r="13" fill="#66e2d2"/></g>
+      <text x="720" y="110" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Flu-vaccine helper</text>
+      <text x="720" y="132" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">older-adult trials</text>
+      <text x="720" y="154" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">2000s–2010s</text>
+      <g class="stg stg6"><circle cx="880" cy="200" r="13" fill="#fbbf24"/></g>
+      <text x="880" y="262" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">Sepsis: small trials</text>
+      <text x="880" y="284" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">suggested benefit · 2014</text>
+      <g class="stg stg7"><circle cx="1040" cy="200" r="13" fill="#a9b1c9"/></g>
+      <text x="1040" y="110" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">TESTS phase 3: 1,106 patients</text>
+      <text x="1040" y="132" font-size="13" font-weight="700" fill="#a9b1c9" text-anchor="middle">no mortality benefit</text>
+      <text x="1040" y="154" font-size="11" font-weight="700" fill="#7f88a5" text-anchor="middle">2025</text>
+    </svg>
+    <div class="cap">Clinical history — from thymus extracts to a 1,106-patient phase 3. Each era labeled with what the evidence actually showed.</div>
+  </div>
+<div class="bridge reveal"><p>Fifty years of research, one honest pattern: <strong>early excitement, then bigger trials asking harder questions</strong>. Here is each area, with the full context.</p></div>
+<h3 class="ev-h reveal">WHAT THE EVIDENCE ACTUALLY SHOWS</h3>
+<div class="evrow">
+  <div class="ev-a reveal"><div class="ev-tag">Earlier / smaller</div><p><strong>Hepatitis B:</strong> 1990s&ndash;2000s trials &mdash; added to antivirals, it improved response rates. A real but modest signal, and the basis for approvals in 30+ countries.</p></div>
+  <div class="ev-b reveal"><div class="ev-tag">Later / larger</div><p>No large modern trial has upgraded &ldquo;modest add-on benefit&rdquo; to &ldquo;cure&rdquo;. The signal held &mdash; as exactly that: <strong>modest</strong>.</p></div>
+</div>
+<div class="evrow">
+  <div class="ev-a reveal"><div class="ev-tag">Earlier / smaller</div><p><strong>Sepsis:</strong> small trials and a 2015 meta-analysis (12 trials, 1,480 patients) pooled roughly a third lower mortality. Genuinely encouraging.</p></div>
+  <div class="ev-b reveal"><div class="ev-tag">Later / larger</div><p><strong>TESTS phase 3 (2025):</strong> 1,106 patients across 22 centers &mdash; 23.4% vs 24.1% mortality, no significant difference. The biggest, best-designed trial <strong>erased the headline</strong>. Subgroup hints (older, diabetic patients) need their own trials.</p></div>
+</div>
+<div class="evrow">
+  <div class="ev-a reveal"><div class="ev-tag">Earlier / smaller</div><p><strong>Vaccine response:</strong> early trials &mdash; older adults mounted stronger flu-vaccine responses with it on board.</p></div>
+  <div class="ev-b reveal"><div class="ev-tag">Later / larger</div><p>The most consistent modern signal &mdash; but it means <strong>&ldquo;helps vaccines work better&rdquo;</strong>, not &ldquo;prevents illness by itself&rdquo;.</p></div>
+</div>
+<div class="evrow">
+  <div class="ev-a reveal"><div class="ev-tag">Earlier / smaller</div><p><strong>Oncology &amp; HIV:</strong> small melanoma and lung-cancer trials reported longer relapse-free stretches; HIV trials showed higher CD4 counts.</p></div>
+  <div class="ev-b reveal"><div class="ev-tag">Later / larger</div><p>Small and old &mdash; and hepatitis C interest faded completely once direct-acting antivirals arrived. <strong>Nothing here is close to proven.</strong></p></div>
+</div>
+<div class="doesdont">
+  <div class="dd-col does reveal"><h3>What it does</h3><ul>
+    <li><strong>Tune immune signaling</strong> &mdash; nudging dendritic cells via TLR-related pathways, measured in trial blood samples.</li>
+    <li><strong>Tilt cytokine output</strong> toward Th1-type coordination rather than blanket inflammation.</li>
+    <li><strong>Show modest add-on benefit</strong> in hepatitis B trials &mdash; with antivirals, under medical supervision.</li>
+    <li><strong>Help older adults</strong> mount stronger flu-vaccine responses in trials.</li>
+  </ul></div>
+  <div class="dd-col doesnt reveal"><h3>What it doesn&rsquo;t do</h3><ul>
+    <li><strong>&ldquo;Boost&rdquo; immunity</strong> in any general sense &mdash; boosting is marketing, not a mechanism.</li>
+    <li><strong>Cure hepatitis, sepsis, or cancer</strong> &mdash; TESTS phase 3 found no sepsis mortality benefit.</li>
+    <li><strong>Replace antivirals, vaccines, or standard care</strong> &mdash; studied as an add-on, never a substitute.</li>
+    <li><strong>Turn gray-market vials into the trial product</strong> &mdash; unregulated vials are not the pharmaceutical-grade peptide.</li>
+  </ul></div>
+</div>
+<div class="plain reveal"><div class="plabel">Limits of the evidence</div><p>Many trials were <strong>small by modern standards</strong>; trial courses ran weeks to months, so long-term effects are unstudied; and positive findings from small studies deserve replication &mdash; TESTS is the cautionary tale for the whole field.</p></div>
 </section>
 <mini-poll slug="thymosin-alpha1-mini-ch4"
   data-question="Which evidence area is most convincing?"
@@ -674,21 +990,23 @@ mini-poll { display: block; }
 
 <!-- ============ CHAPTER 5 ============ -->
 <section class="chapter" id="ch5">
-  <span class="eyebrow"><span class="n">05</span>What people say</span>
-  <h2>Reports from the <span class="hl">wild</span></h2>
-  <p class="lede">Beyond the trials, there’s a gray-market scene of people buying unregulated vials for “immune support.” Their stories are <strong>vivid, unverified, and tangled with cold season</strong> — read accordingly.</p>
+  <span class="eyebrow"><span class="n">05</span>Community reports</span>
+  <h2>What the community <span class="hl">reports</span></h2>
+  <p class="lede">Reddit threads, TikTok clips, YouTube breakdowns, and forum logs are full of Thymosin Alpha-1 stories — fewer sick days, faster bounce-backs, feeling “more resilient.” They’re <strong>vivid, unverified, and impossible to separate</strong> from cold season, flu shots, and luck. Stories are not data — read accordingly.</p>
   <div class="ulegend reveal"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div><div class="anec-grid">
-    <div class="anec reveal"><div class="anec-head"><h4>Fewer sick days</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Haven’t caught the office cold all winter.”</p><div class="caveat"><strong>Caveat:</strong> winter illness is seasonal and random; one good winter proves nothing<br><strong>Pattern:</strong> the classic immune story — an absence of events claimed as an effect</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The travel shield</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Take it before every flight, never get sick after.”</p><div class="caveat"><strong>Caveat:</strong> most flights don’t make you sick anyway<br><strong>Pattern:</strong> ritual plus travel anxiety plus confirmation bias</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Paired with the flu shot</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Got the shot plus the peptide — felt extra protected.”</p><div class="caveat"><strong>Caveat:</strong> the shot alone does the heavy lifting; splitting the credit is guesswork<br><strong>Pattern:</strong> stacking credit onto the proven intervention</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The non-responder</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Three months, caught two colds anyway.”</p><div class="caveat"><strong>Caveat:</strong> negative reports get fewer replies and fade fast<br><strong>Pattern:</strong> quiet non-response — likely common, rarely amplified</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Red spot at the site</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Small red bump where it went in, gone in a day.”</p><div class="caveat"><strong>Caveat:</strong> mild local reactions appear in real trials too — but gray-market vials add unknowns<br><strong>Pattern:</strong> the one side effect trials and forums agree on</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>The expensive habit</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“It’s pricey, so I tell myself it’s working.”</p><div class="caveat"><strong>Caveat:</strong> cost is not a mechanism of action<br><strong>Pattern:</strong> price-as-proof reasoning</div></div>
-    <div class="anec reveal"><div class="anec-head"><h4>Feeling “balanced”</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I just feel more… balanced.”</p><div class="caveat"><strong>Caveat:</strong> unmeasurable outcomes can’t be checked<br><strong>Pattern:</strong> vague wellness language that resists testing</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Fewer sick days</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Haven’t caught the office cold all winter.”</p><div class="caveat"><strong>Caveat:</strong> winter illness is seasonal and random; one good winter proves nothing — the classic immune story is an absence of events claimed as an effect</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The travel shield</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Take it before every flight, never get sick after.”</p><div class="caveat"><strong>Caveat:</strong> most flights don’t make you sick anyway; nobody posts the trips where they did everything right and still caught something</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Flu-shot pairing</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Got the flu shot plus the peptide — felt extra protected.”</p><div class="caveat"><strong>Caveat:</strong> the flu shot alone does the heavy lifting here; the pairing tends to get the credit</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Bouncing back faster</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“When I do get sick, it’s over in two days instead of a week.”</p><div class="caveat"><strong>Caveat:</strong> colds vary wildly on their own; recovery speed is a shaky yardstick</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>“More resilient”</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“I just feel hardier, like my immune system is awake.”</p><div class="caveat"><strong>Caveat:</strong> resilience is a feeling, not a measurement — and feelings follow expectations</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The non-responder</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Three months in, caught two colds anyway.”</p><div class="caveat"><strong>Caveat:</strong> negative reports get fewer likes so they surface less — absence of complaints isn’t absence of failures</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Energy, not immunity</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Didn’t get sick less, but I had more energy.”</p><div class="caveat"><strong>Caveat:</strong> energy and immunity are different systems; one doesn’t prove the other</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>Red spot at the site</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“Small red bump where it went in, gone in a day.”</p><div class="caveat"><strong>Caveat:</strong> mild local reactions are the most believable reports — and the least exciting</div></div>
+    <div class="anec reveal"><div class="anec-head"><h4>The expensive habit</h4><span class="udot" role="img" aria-label="Unverified anecdote"></span></div><p>“It’s pricey, so part of me wonders if I’m imagining it.”</p><div class="caveat"><strong>Caveat:</strong> cost is not a mechanism — but it is a powerful placebo amplifier</div></div>
   </div><div class="plain reveal"><div class="plabel">Plain English</div><p>Trials measure <strong>antibodies and response rates</strong>; forums measure <strong>feelings and winters</strong>. Both can feel real — only one can be checked.</p></div>
 </section>
 <mini-poll slug="thymosin-alpha1-mini-ch5"
-  data-question="“I never get sick anymore” — how do you read stories like that?"
+  data-question="“I never get sick anymore” — how do you read community reports like that?"
   data-answers='[["💬", "Encouraging"], ["🧂", "Take with salt"], ["🍂", "Probably seasonal luck"], ["⚖️", "Stories aren’t data"]]'>
 </mini-poll>
 
@@ -713,77 +1031,157 @@ mini-poll { display: block; }
 
 <!-- ============ CHAPTER 7 ============ -->
 <section class="chapter" id="ch7">
-  <span class="eyebrow"><span class="n">07</span>Glossary</span>
-  <h2>Speak <span class="hl">thymus</span></h2>
-  <p class="lede">Eleven terms, each with the science, an example, and a plain-English translation. Tap any term to expand it.</p>
-  <div class="gloss">
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><circle cx="24" cy="24" r="11" fill="none" stroke="#53df86" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#53df86"/></svg><span class="term">Thymosin Alpha-1</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A 28-amino-acid, N-terminally acetylated peptide cleaved from prothymosin alpha. Modulates T-cell, dendritic-cell, and toll-like-receptor signaling.</p>
-      <p class="gex"><span class="gslabel">Example</span>The peptide this page is about — the thymus’s 28-link memo.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A short immune-coaching note from the thymus, 28 building blocks long.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#66e292" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#66e292" stroke-width="2.5"/></svg><span class="term">Prothymosin alpha</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The larger precursor protein, made mainly in the thymus, from which Thymosin Alpha-1 is cut.</p>
-      <p class="gex"><span class="gslabel">Example</span>The book the chapter was torn from — the peptide doesn’t exist without it.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The long protein the short peptide is sliced from.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><path d="M10 24h28M24 10v28" fill="none" stroke="#2aa257" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Thymus</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>The gland behind the breastbone where T cells mature. Large in childhood, it shrinks steadily with age.</p>
-      <p class="gex"><span class="gslabel">Example</span>The fading factory — the reason anyone thought to replace its signals.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The immune system’s training academy, which downsizes as you age.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#53df86" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">T cell</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A white blood cell that coordinates immune responses — helper T cells direct, killer T cells destroy infected cells.</p>
-      <p class="gex"><span class="gslabel">Example</span>The coached players — the cells this peptide is meant to tune.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The immune system’s coordinators and assassins.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M24 8l14 24H10z" fill="none" stroke="#66e292" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#66e292"/></svg><span class="term">Dendritic cell</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Sentinel immune cells that sample their surroundings and present suspicious fragments to T cells — the scouts.</p>
-      <p class="gex"><span class="gslabel">Example</span>The first audience — the peptide wakes these scouts via toll-like receptors.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The immune system’s lookouts, shouting “heads up” to the T cells.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#2aa257" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Cytokine</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Small signaling proteins cells use to coordinate — interleukins and interferons are the vocabulary of immunity.</p>
-      <p class="gex"><span class="gslabel">Example</span>The group chat — the peptide shifts which messages get sent.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Chemical text messages between immune cells.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#53df86" stroke-width="2.5"/><path d="M18 24h12" stroke="#53df86" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Toll-like receptor</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Sensor proteins on immune cells that detect microbial patterns — the alarm buttons of innate immunity.</p>
-      <p class="gex"><span class="gslabel">Example</span>One of the peptide’s docking points — pressing the alarm, gently.</p>
-      <div class="plain"><span class="plabel">Plain English</span>The burglar-alarm buttons on immune scout cells.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#66e292" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#66e292"/><circle cx="34" cy="34" r="3" fill="#66e292"/></svg><span class="term">Th1/Th2 balance</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>Two flavors of helper-T-cell response: Th1 leans germ-fighting, Th2 leans allergy/antibody. Health needs both in proportion.</p>
-      <p class="gex"><span class="gslabel">Example</span>What “immune balance” actually refers to — a measurable tilt, not a vibe.</p>
-      <div class="plain"><span class="plabel">Plain English</span>Two gears of the immune response — the peptide nudges the stick.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><circle cx="24" cy="24" r="11" fill="none" stroke="#2aa257" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#2aa257"/></svg><span class="term">Adjuvant</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A substance given with a vaccine to strengthen the immune response to it.</p>
-      <p class="gex"><span class="gslabel">Example</span>The peptide’s most practical trial role — the flu shot’s plus-one.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A wingman for vaccines — making the shot work harder.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#53df86" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#53df86" stroke-width="2.5"/></svg><span class="term">Chronic hepatitis B</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A long-term liver infection where the immune system sees the virus but can’t clear it — immune exhaustion, made visible.</p>
-      <p class="gex"><span class="gslabel">Example</span>The peptide’s main trial arena — where “immune coaching” was tested hardest.</p>
-      <div class="plain"><span class="plabel">Plain English</span>A liver infection the immune system stalemates instead of winning.</div>
-    </div></div>
-<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M10 24h28M24 10v28" fill="none" stroke="#66e292" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Sepsis</span><span class="plus">+</span></button><div class="g-a">
-      <p class="gsci"><span class="gslabel">The science</span>A life-threatening overreaction to infection — the immune system’s response becomes the danger.</p>
-      <p class="gex"><span class="gslabel">Example</span>The hardest test — where immune modulation showed mixed results.</p>
-      <div class="plain"><span class="plabel">Plain English</span>When the immune system’s panic does more damage than the germ.</div>
-    </div></div>
+  <span class="eyebrow"><span class="n">07</span>Head to head</span>
+  <h2>Thymosin Alpha-1 vs <span class="hl">the field</span></h2>
+  <p class="lede">How does an immune <strong>tuner</strong> compare to a direct germ-attacker, to conventional immune medicine, and to its thymic cousins? Mechanisms, targets, and evidence &mdash; side by side.</p>
+  <div class="vsgrid">
+    <div class="vscard reveal">
+      <div class="vs-top"><div class="vs-badge">1</div><h3>vs LL-37<small>The coach vs the attacker</small></h3></div>
+      <dl>
+        <div><dt>Mechanism</dt><dd><strong>Ta1 tunes host immune cells</strong> &mdash; dendritic, T, and NK cells via TLR-related signaling. <strong>LL-37 punches holes in microbial membranes</strong> directly.</dd></div>
+        <div><dt>Immune targets</dt><dd>Ta1 acts on <strong>your own immune cells</strong>; LL-37 acts on <strong>the germs themselves</strong>.</dd></div>
+        <div><dt>Clinical evidence</dt><dd>Ta1: <strong>decades of human trials</strong>, a medicine in 30+ countries. LL-37: mostly lab, animal, and topical research.</dd></div>
+        <div><dt>Limitations</dt><dd>Ta1&rsquo;s effects are <strong>modest and context-dependent</strong>; LL-37&rsquo;s systemic evidence is thin.</dd></div>
+        <div><dt>Bottom line</dt><dd>Different jobs entirely &mdash; <strong>one conducts the orchestra, the other plays bouncer</strong>.</dd></div>
+      </dl>
+    </div>
+    <div class="vscard reveal">
+      <div class="vs-top"><div class="vs-badge b2">2</div><h3>vs conventional immune medicine<small>Vaccines &amp; interferon-era therapy</small></h3></div>
+      <dl>
+        <div><dt>Status</dt><dd>Conventional approaches are <strong>standard, fully-approved medicine</strong>. Ta1 is a <strong>regionally-approved adjunct</strong> in hepatitis programs.</dd></div>
+        <div><dt>Evidence weight</dt><dd><strong>Massive modern trial programs</strong> vs <strong>modest, mostly older</strong> trials.</dd></div>
+        <div><dt>Role</dt><dd>The foundation vs a possible <strong>add-on</strong> &mdash; never a replacement.</dd></div>
+        <div><dt>Limitations</dt><dd>Conventional options have <strong>known, managed</strong> side-effect profiles; Ta1&rsquo;s long-term picture is <strong>unstudied</strong>.</dd></div>
+        <div><dt>Bottom line</dt><dd>Established medicine sets the bar; Ta1 is <strong>judged against it, not instead of it</strong>.</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="vsgrid">
+    <div class="vscard reveal">
+      <div class="vs-top"><div class="vs-badge b3">3</div><h3>vs other thymic peptides<small>Thymopentin, thymosin fraction 5, thymosin beta-4</small></h3></div>
+      <dl>
+        <div><dt>Shared origin</dt><dd>All trace back to <strong>thymus biology</strong> &mdash; the gland that trains immune cells.</dd></div>
+        <div><dt>Evidence gap</dt><dd>Ta1 has the <strong>largest human-trial base</strong> in the family (TESTS, hepatitis programs). The others rest on <strong>thinner, smaller</strong> data.</dd></div>
+        <div><dt>Mechanism</dt><dd>Ta1&rsquo;s TLR / dendritic-cell story is the <strong>best-mapped</strong>; its cousins&rsquo; mechanisms are less characterized.</dd></div>
+        <div><dt>Bottom line</dt><dd><strong>Most-studied of its family</strong> &mdash; and still modest.</dd></div>
+      </dl>
+    </div>
+    <div class="vscard reveal">
+      <div class="vs-top"><div class="vs-badge b4">&#10003;</div><h3>The honest scorecard<small>Where Ta1 actually stands</small></h3></div>
+      <dl>
+        <div><dt>Stands out</dt><dd>The only thymic peptide with a <strong>1,100-patient phase 3</strong> and real-world approvals.</dd></div>
+        <div><dt>Doesn&rsquo;t</dt><dd><strong>No cures</strong>; TESTS neutral on sepsis; gray-market vials are not the trial product.</dd></div>
+        <div><dt>Would settle it</dt><dd><strong>Modern large trials</strong> in aging immunity and vaccine response.</dd></div>
+        <div><dt>Verdict</dt><dd>A <strong>genuinely studied immune tuner</strong> with modest, specific effects &mdash; not a miracle, not a myth.</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="plain reveal"><div class="plabel">Why comparisons are tricky</div><p>Different peptides were tested in <strong>different diseases, different decades, different trial designs</strong> &mdash; head-to-head trials between them basically don&rsquo;t exist. Compare the evidence bases, not just the marketing.</p></div>
+  <mini-poll slug="thymosin-alpha1-mini-ch7"
+    data-question="Thymosin Alpha-1 vs LL-37 — what’s the biggest difference?"
+    data-answers='[["🥊", "Different jobs: coach vs attacker"], ["📊", "Different evidence levels"], ["🎯", "Different targets"], ["🤔", "Still figuring it out"]]'>
+  </mini-poll>
+</section>
+
+<!-- ============ CHAPTER 8 ============ -->
+<section class="chapter" id="ch8">
+  <span class="eyebrow"><span class="n">08</span>Potential benefits</span>
+  <h2>What Thymosin Alpha-1 might <span class="hl">actually offer</span></h2>
+  <p class="lede">Not all claimed benefits are built the same. Every potential upside below is sorted into one of three tiers — <strong>established</strong> (real trial data), <strong>predicted / emerging</strong> (early or proposed), or <strong>community</strong> (unverified stories). The tiers are visually separated on purpose: they are <strong>not equally solid</strong>.</p>
+  <div class="scard tier lvl-est reveal"><span class="level">Established · trial data</span><h4>Backed by human trials</h4>
+    <ul>
+      <li><strong>Stronger flu-vaccine responses in older adults</strong> — trials found better antibody responses when it was given alongside flu vaccines; the most consistent modern signal.</li>
+      <li><strong>Modest add-on benefit in chronic hepatitis B</strong> — added to antivirals, it improved response rates in several 1990s–2000s trials; real but modest, never a cure, and the basis for approvals in 30+ countries.</li>
+      <li><strong>Generally well-tolerated in trials</strong> — mild local reactions were the main observed side effect across weeks-to-months courses.</li>
+    </ul>
+  </div>
+  <div class="layman reveal"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> a flu vaccine shows your immune system a “wanted” poster of the virus. Thymosin Alpha-1 is like turning up the loudspeaker so the whole station hears the announcement — it doesn’t create the immunity itself; it helps the message land.</p></div>
+  <div class="scard tier lvl-emerg reveal"><span class="level">Predicted / emerging · early data</span><h4>Investigated, not established</h4>
+    <ul>
+      <li><strong>Sepsis:</strong> smaller trials suggested benefit, but the 1,106-patient TESTS phase 3 found no mortality benefit. Subgroup hints (older, diabetic patients) need their own trials.</li>
+      <li><strong>Oncology and HIV:</strong> small, old trials reported longer relapse-free stretches and higher CD4 counts. Nothing here is close to proven.</li>
+      <li><strong>Aging immunity beyond flu shots:</strong> a proposed application — immune coaching for a fading thymus — that still awaits large, modern trials.</li>
+    </ul>
+  </div>
+  <div class="layman reveal"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> a half-built bridge. The engineering drawings exist and some pylons are in the water — but nobody has driven a truck across it yet. Call it promising only if you remember the “yet.”</p></div>
+  <div class="scard tier lvl-comm reveal"><span class="level">Community · unverified anecdotes</span><h4>What users report — stories, not data<span class="udot" role="img" aria-label="Unverified anecdote"></span></h4>
+    <div class="ulegend" style="margin:1rem 0 0"><span class="udot" role="img" aria-label="Unverified anecdote"></span><p><strong>Unverified anecdote</strong> — the pulsing dot marks a paraphrased recurring theme from forums and social media: not verified, not evidence.</p></div>
+    <ul>
+      <li><strong>“Fewer sick days”</strong> — “Haven’t caught the office cold all winter.” Caveat: winter illness is seasonal and random; one good winter proves nothing.</li>
+      <li><strong>“Bouncing back faster”</strong> — colds over in days instead of a week. Caveat: colds vary wildly on their own; recovery speed is a shaky yardstick.</li>
+      <li><strong>“The travel shield”</strong> — taken before flights, no sickness after. Caveat: most flights don’t make you sick anyway.</li>
+      <li><strong>“More resilient”</strong> — a general feeling of being hardier. Caveat: resilience is a feeling, not a measurement — and feelings follow expectations.</li>
+    </ul>
   </div>
 </section>
-<mini-poll slug="thymosin-alpha1-mini-ch7"
+<mini-poll slug="thymosin-alpha1-mini-benefits"
+  data-question="Which benefit tier is most convincing to you?"
+  data-answers='[["🧪", "Established — trial data"], ["🔭", "Predicted / emerging"], ["💬", "Community stories"], ["⚖️", "None convince me yet"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 9 ============ -->
+<section class="chapter" id="ch9">
+  <span class="eyebrow"><span class="n">09</span>Who it may suit</span>
+  <h2>Who it may <span class="hl">suit</span> — and who it may not</h2>
+  <p class="lede">Who has actually been studied with Thymosin Alpha-1 — and where caution is warranted. <strong>This is general information, not personal medical advice.</strong></p>
+  <div class="safety-grid">
+    <div class="scard fit-a lvl-est reveal"><span class="level">Studied contexts</span><h4>May be relevant for</h4>
+      <ul>
+        <li><strong>People with chronic hepatitis B</strong> — studied as an add-on to antivirals in trials, under medical supervision; improved response rates in several studies.</li>
+        <li><strong>Sepsis patients in hospital trials</strong> — investigated in controlled settings including the TESTS phase 3; results were mixed.</li>
+        <li><strong>Older adults receiving flu vaccines</strong> — the strongest modern trial signal: stronger antibody responses with it on board.</li>
+        <li><strong>Immunocompromised research contexts</strong> — small HIV trials reported CD4 changes; research-only evidence, not established practice.</li>
+      </ul>
+    </div>
+    <div class="scard fit-b lvl-comm reveal"><span class="level">Caution warranted</span><h4>May not suit / extra caution</h4>
+      <ul>
+        <li><strong>People with autoimmune conditions</strong> — immune stimulation could, in theory, aggravate autoimmunity; discussed as a caution, not demonstrated.</li>
+        <li><strong>Pregnant or breastfeeding people</strong> — unstudied; no safety data exists.</li>
+        <li><strong>Children</strong> — the trial evidence comes from adults.</li>
+        <li><strong>People on immunosuppressants or biologics</strong> — no interaction studies exist.</li>
+        <li><strong>Anyone expecting a cure, an “immune boost,” or a general wellness effect</strong> — that’s marketing language, not what the evidence shows.</li>
+        <li><strong>Anyone considering unregulated vials</strong> — no quality oversight; not the pharmaceutical product studied in trials.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="layman reveal"><span class="ldot" aria-hidden="true"></span><p><strong>Think of it this way:</strong> researchers have walked a few fields with this peptide — hepatitis B, sepsis wards, flu-shot clinics. Everything outside those fields is unmapped terrain. “Studied in a population” is not the same as “right for you.”</p></div>
+  <div class="plain reveal"><div class="plabel">The line that matters</div><p>This is <strong>general information, not personal medical advice</strong>. Only a licensed clinician who knows your history can weigh the studied populations against your own situation — talk to one before considering anything.</p></div>
+</section>
+<mini-poll slug="thymosin-alpha1-mini-fit"
+  data-question="What would you weigh first when considering fit?"
+  data-answers='[["🏥", "Studied populations"], ["⚠️", "Caution flags"], ["👩‍⚕️", "Talking to a clinician"], ["📖", "More research needed"]]'>
+</mini-poll>
+
+<!-- ============ CHAPTER 10 ============ -->
+
+<section class="chapter" id="ch10">
+  <span class="eyebrow"><span class="n">10</span>Understanding Thymosin Alpha-1 Terminology</span>
+  <h2>Understanding <span class="hl">Thymosin Alpha-1 terminology</span></h2>
+  <p class="lede">Eleven terms, each with the science and a plain-English translation. Tap any term to expand it.</p>
+  <div class="gloss">
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><circle cx="24" cy="24" r="11" fill="none" stroke="#dfb853" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#dfb853"/></svg><span class="term">Thymosin Alpha-1</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Thymosin Alpha-1 is a 28-amino-acid peptide, N-terminally acetylated (a small chemical cap that protects the chain), cleaved from the larger protein prothymosin alpha. It is an immune modulator — not a booster — that nudges dendritic cells partly via toll-like receptors, tilts cytokine output toward Th1-type coordination, and influences T-cell and NK-cell behavior. Parts of this chain were measured in human trial blood samples, unusually for a peptide page. The synthesized version (thymalfasin) is approved in 30+ countries, mostly for hepatitis B as an add-on to antivirals. Gray-market vials are not the pharmaceutical-grade peptide.</p><div class="plain"><span class="plabel">Plain English</span>Thymosin Alpha-1 is a short immune-coaching note from the thymus — 28 building blocks long, with a protective cap on one end, sliced from a larger protein. It doesn't kill germs itself; it coaches the cells that do, nudging scouts awake and tilting chemical messages toward coordinated germ-fighting. Unusually for this field, parts of that chain were measured in real patients' blood, not just petri dishes. The lab-made version is approved in 30-plus countries as a hepatitis B add-on. Vials bought online are not the same product — it's the thymus's 28-link memo, not a generic immune “boost.”</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#66e2d2" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#66e2d2" stroke-width="2.5"/></svg><span class="term">Prothymosin alpha</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Prothymosin alpha is the larger precursor protein from which Thymosin Alpha-1 is sliced during processing — the body doesn't build the 28-amino-acid chain from scratch. It is made in the thymus, the gland where T cells mature, tying the peptide to its immune-coaching role. The cleaved portion runs SDAAVDTSSEITTKDLKEKKEVVEEAEN, with an acetyl cap added at the N-terminus. Early research used crude thymus extracts containing many such factors; modern work uses the chemically synthesized peptide with no animal tissue involved. Understanding the precursor matters because it explains why scientists looked to the thymus in the first place.</p><div class="plain"><span class="plabel">Plain English</span>Prothymosin alpha is the long protein the short peptide is sliced from — the body tears one useful chapter out of a longer book. It's made in the thymus, the gland that raises T cells, which is exactly why researchers went hunting there for immune signals. The early work used ground-up gland extracts; today's research uses the clean, synthesized chain. Think of it as the book the chapter was torn from — the peptide doesn't exist without it. The precursor is the reason the thymus was the starting point at all.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><path d="M10 24h28M24 10v28" fill="none" stroke="#2a35a2" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Thymus</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>The thymus is the gland behind the breastbone where T cells — the immune system's coordinators — grow up and learn to distinguish self from invader. It is large in childhood and shrinks steadily with age; by middle age it is mostly fatty tissue. That fading is the whole idea behind thymus peptides: replace a signal the body is losing. Thymosin Alpha-1 is one of the thymus's chemical messengers, cut from prothymosin alpha made in this gland. The gland's decline is normal aging — not a disease — which is why “replace the signal” is a hypothesis, not a prescription.</p><div class="plain"><span class="plabel">Plain English</span>The thymus is the immune system's training academy — the gland behind your breastbone where T cells grow up. It's big in childhood and downsizes with age, becoming mostly fat by middle age. The fading factory is the reason anyone thought to bottle its signals in the first place. Thymosin Alpha-1 is one of those signals. The shrink is normal aging, not illness — which is why replacing the signal is an idea to test, not an obvious fix.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><path d="M12 36V12m0 0h20v12H12m20 0v12" fill="none" stroke="#dfb853" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="term">T cell</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>T cells are white blood cells that coordinate immune responses — the adaptive specialists that learn and remember. Helper T cells direct other immune cells; killer (cytotoxic) T cells destroy infected cells directly. They grow up in the thymus, which is why the gland's decline with age is linked to weaker adaptive immunity. Thymosin Alpha-1 is studied as a coach for these cells: nudging dendritic cells so they present signals better, and tilting cytokine tone toward Th1-type coordination. It doesn't replace T cells — it changes how they talk to each other.</p><div class="plain"><span class="plabel">Plain English</span>T cells are the immune system's coordinators and assassins — white blood cells that learn, specialize, and remember. Helpers direct the operation; killers take out infected cells. They graduate from the thymus academy, which is why an aging thymus means an aging defense. Thymosin Alpha-1 is studied as their coach: waking the scouts that brief them and tilting their chemical chatter toward coordinated germ-fighting. They're the coached players — the cells this peptide is meant to tune, not replace.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M24 8l14 24H10z" fill="none" stroke="#66e2d2" stroke-width="2.5" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="#66e2d2"/></svg><span class="term">Dendritic cell</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Dendritic cells are sentinel immune cells that sample their surroundings and present suspicious fragments to T cells — the scouts that brief the specialists. When activated, they grow branch-like arms (dendrites) that grab trouble signals and hand them to T cells, making them far better messengers. Thymosin Alpha-1's proposed first step is nudging these scouts awake, partly via toll-like receptors — the alarm buttons of innate immunity. This “scouts first” design is why the peptide is studied at the handoff between innate and adaptive immunity. An activated dendritic cell is the difference between a vague alarm and a directed response.</p><div class="plain"><span class="plabel">Plain English</span>Dendritic cells are the immune system's lookouts — they sample the neighborhood and show suspicious finds to the T cells. When one wakes up, it grows branchy arms to grab trouble signals and briefs the specialists properly. Thymosin Alpha-1's first proposed move is shaking these scouts awake, partly by pressing their alarm-button receptors. That's why the peptide is studied at the handoff between the fast innate response and the smart adaptive one. They're the first audience — the peptide wakes these scouts, and the scouts brief everyone else.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><path d="M8 14h32M8 24h32M8 34h20" fill="none" stroke="#2a35a2" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Cytokine</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Cytokines are small signaling proteins cells use to coordinate — interleukins and interferons are the vocabulary of immunity. They carry instructions: recruit, activate, multiply, calm down. Thymosin Alpha-1's proposed effect is a tilt in cytokine tone toward Th1-type signals that coordinate germ-fighting, rather than a flood of everything. That tilt-not-flood distinction is the whole “modulator, not booster” idea: conducting rather than turning up the volume. In excess, the same messengers drive harmful inflammation — which is why balance, not volume, is the goal.</p><div class="plain"><span class="plabel">Plain English</span>Cytokines are chemical text messages between immune cells — short protein notes carrying orders like “come here” or “stand down.” Thymosin Alpha-1's proposed trick is tilting which messages get sent: more of the coordinated germ-fighting flavor, not simply more of everything. That's the difference between a conductor and a volume knob. The same messages that organize a defense can cause damage when there's too much chatter — so the goal is balance, not loudness. It's the group chat — and the peptide shifts which messages get sent.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><rect x="12" y="12" width="24" height="24" rx="6" fill="none" stroke="#dfb853" stroke-width="2.5"/><path d="M18 24h12" stroke="#dfb853" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Toll-like receptor</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Toll-like receptors (TLRs) are sensor proteins on immune cells that detect conserved microbial patterns — the molecular shapes that mark something as foreign. They are the alarm buttons of innate immunity: press one and the cell passes the message inside, waking up and sounding the alarm. The research suggests Thymosin Alpha-1 can press these buttons on dendritic cells — the proposed first step in its sense → signal → mobilize → balance chain. This step was part of what made the peptide's mechanism unusually well documented: effects measured in trial blood samples, not just petri dishes. They don't identify specific germs — they recognize generic trouble, fast.</p><div class="plain"><span class="plabel">Plain English</span>Toll-like receptors are the burglar-alarm buttons on immune scout cells — they sense generic trouble patterns and sound the alarm. The research suggests Thymosin Alpha-1 can press these buttons on dendritic cells, kicking off its whole coaching sequence. Pressing the alarm, gently, is the proposed first domino: sense, then signal, then mobilize, then balance. These sensors don't name the intruder — they just shout “trouble” fast. That generality is exactly what makes them innate immunity's front door — and one of the peptide's docking points.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M14 34c8-14 12-14 20 0" fill="none" stroke="#66e2d2" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3" fill="#66e2d2"/><circle cx="34" cy="34" r="3" fill="#66e2d2"/></svg><span class="term">Th1/Th2 balance</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Th1 and Th2 are two flavors of helper-T-cell response: Th1 leans toward coordinated germ-fighting (cellular defense), Th2 toward antibody production and allergy-type responses. Health needs both in proportion — the “balance” is a measurable tilt, not a vibe. Thymosin Alpha-1 is proposed to tilt cytokine output toward the Th1 flavor, favoring organized cellular defense over blanket inflammation. That framing is also a guardrail: “immune balance” in marketing usually means nothing, but here it refers to a specific, measurable axis. It is the peptide's signature proposed effect — and still a proposed one, not a proven clinical lever.</p><div class="plain"><span class="plabel">Plain English</span>Th1 and Th2 are two gears of the immune response: Th1 runs coordinated germ-fighting, Th2 runs the allergy-and-antibody shop. A healthy immune system uses both in proportion — that's what “balance” actually means here, a measurable tilt, not a wellness buzzword. Thymosin Alpha-1's signature proposed effect is nudging the stick toward the Th1 gear — shifting, not flooding. And it's still proposed, not proven as a clinical lever you can pull on demand: what “immune balance” actually refers to is a measurable tilt, not a vibe.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v3" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#2aa25722"/><circle cx="24" cy="24" r="11" fill="none" stroke="#2a35a2" stroke-width="2.5"/><circle cx="24" cy="24" r="3.5" fill="#2a35a2"/></svg><span class="term">Adjuvant</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>An adjuvant is a substance given alongside a vaccine to strengthen the immune response to it — a helper that makes the main act work better. Thymosin Alpha-1's most consistent modern signal is exactly this role: older adults mounted stronger flu-vaccine responses with it on board in trials. That is immune coaching at its most practical — and it means “helps vaccines work better,” not “prevents illness by itself.” The vaccine angle is also the newest chapter of the peptide's clinical history, emerging after decades of hepatitis and sepsis work. It remains the strongest signal in a file full of “it's complicated.”</p><div class="plain"><span class="plabel">Plain English</span>An adjuvant is a wingman for vaccines — something given alongside the shot to make the immune response stronger. This is Thymosin Alpha-1's most practical trial role: older adults made stronger flu-vaccine responses with it on board. It helps the vaccine work better; it doesn't prevent illness by itself. After decades of hepatitis and sepsis research with mixed results, the vaccine-helper signal is the most consistent modern chapter. Still a helper, never the main act — the flu shot's plus-one.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#53df8622"/><path d="M8 32c5-9 9-14 16-14s11 5 16 14" fill="none" stroke="#dfb853" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="14" r="4" fill="none" stroke="#dfb853" stroke-width="2.5"/></svg><span class="term">Chronic hepatitis B</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Chronic hepatitis B is a long-term liver infection in which the immune system sees the virus but can't clear it — the textbook picture of immune exhaustion. That made it a logical arena for an immune coach: the machinery is present, just stalled. Added to antivirals, Thymosin Alpha-1 improved response rates in several 1990s–2000s trials — a real but modest signal, the basis for approvals in 30+ countries. “Modest” means better response rates, not cures: more patients clearing markers with the add-on than without. No large modern trial has upgraded that finding; it has held as exactly what it was — modest.</p><div class="plain"><span class="plabel">Plain English</span>Chronic hepatitis B is a liver infection the immune system stalemates instead of winning — it sees the virus but can't finish the job. That exhaustion made it the natural first test for an immune coach. With antivirals plus the peptide, several trials showed better response rates: real, but modest — more patients clearing markers, not cures. It's the basis for the drug's approvals in 30-plus countries. Decades later, no bigger trial has upgraded “modest add-on” to anything grander — and honesty demands saying so, since this is where “immune coaching” was tested hardest.</div></div></div>
+<div class="g-item"><button class="g-q" aria-expanded="false"><svg class="gthumb v2" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#66e29222"/><path d="M10 24h28M24 10v28" fill="none" stroke="#66e2d2" stroke-width="2.5" stroke-linecap="round"/></svg><span class="term">Sepsis</span><span class="plus">+</span></button><div class="g-a"><p class="gsci"><span class="gslabel">The science</span>Sepsis is a life-threatening overreaction to infection — the immune system's response becomes the danger, damaging organs faster than the germ does. Small early trials of Thymosin Alpha-1 suggested benefit, and a 2015 meta-analysis of 12 trials (1,480 patients) pooled roughly a third lower mortality. Then came TESTS, the 2025 phase 3: 1,106 patients across 22 centers, 23.4% vs 24.1% mortality — no significant difference. The biggest, best-designed trial erased the headline, making sepsis the cautionary tale of the whole file. Subgroup hints (older, diabetic patients) would need their own trials before meaning anything.</p><div class="plain"><span class="plabel">Plain English</span>Sepsis is when the immune system's panic does more damage than the germ — a life-threatening overreaction that shuts down organs. Early small trials of the peptide looked encouraging, and a 2015 pooled analysis even suggested a third lower mortality. Then the big one arrived: TESTS, 1,106 patients in 2025, showed essentially identical death rates with or without it. The largest, best-designed trial erased the headline. It's the hardest test — and the cautionary tale of the entire file: small encouraging trials must be replicated before celebration.</div></div></div>
+  </div>
+</section>
+<mini-poll slug="thymosin-alpha1-mini-ch8"
   data-question="Which term was newest to you?"
   data-answers='[["🕵️", "Dendritic cell"], ["🔔", "Toll-like receptor"], ["⚖️", "Th1/Th2 balance"], ["🧬", "Prothymosin alpha"]]'>
 </mini-poll>
 
-<!-- ============ CHAPTER 8 ============ -->
-<section class="chapter" id="ch8">
-  <span class="eyebrow"><span class="n">08</span>Takeaways</span>
+<!-- ============ CHAPTER 11 ============ -->
+<section class="chapter" id="ch11">
+  <span class="eyebrow"><span class="n">11</span>Takeaways</span>
   <h2>The <span class="hl">bottom line</span></h2>
-  <p class="lede">Eight chapters, distilled. A genuine thymus peptide with genuine trial data — modest effects, honest unknowns, and a gray market trading on a name it didn’t earn.</p>
+  <p class="lede">Eleven chapters, distilled. A genuine thymus peptide with genuine trial data — modest effects, honest unknowns, and a gray market trading on a name it didn’t earn.</p>
   <div class="take-grid">
     <div class="take reveal"><div class="tk">🧬</div><h4>A real thymus peptide</h4><p><strong>28 amino acids</strong>, cut from prothymosin alpha — a genuine piece of immune biology, not a lab invention.</p></div>
     <div class="take reveal"><div class="tk">🏥</div><h4>Tested in people</h4><p>Rare in peptide-land: <strong>decades of human trials</strong> in hepatitis, sepsis, and vaccine response.</p></div>
@@ -804,7 +1202,7 @@ mini-poll { display: block; }
     </ul>
   </div>
 </section>
-<mini-poll slug="thymosin-alpha1-mini-ch8"
+<mini-poll slug="thymosin-alpha1-mini-ch9"
   data-question="How would you rate this infographic?"
   data-answers='[["😍", "⭐⭐⭐⭐⭐ · Loved it"], ["🙂", "⭐⭐⭐⭐ · Good stuff"], ["😐", "⭐⭐⭐ · It’s okay"]]'>
 </mini-poll>
@@ -847,7 +1245,7 @@ setTheme(document.documentElement.getAttribute("data-theme")==="light"?"light":"
   function size(){W=window.innerWidth;H=window.innerHeight;svg.setAttribute("viewBox","0 0 "+W+" "+H);}
   size();window.addEventListener("resize",size);
   var NS="http://www.w3.org/2000/svg";
-  var colors=["#53df86", "#25904d", "#66e292", "#15803d", "#2aa257", "#53df86"];
+  var colors=["#dfb853", "#907225", "#66e2d2", "#806215", "#2a35a2", "#dfb853"];
   for(var i=0;i<140;i++){
     var c=document.createElementNS(NS,"circle");
     var col=colors[i%colors.length];
@@ -954,7 +1352,7 @@ var bar=document.getElementById("progress"),
     tocBar=document.getElementById("tocBar"),tocPct=document.getElementById("tocPct"),
     links=Array.prototype.slice.call(document.querySelectorAll(".toc a, nav.chapters a")),
     rail=document.getElementById("rail"),
-    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8"].map(function(id){return document.getElementById(id);}),
+    sections=["ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11"].map(function(id){return document.getElementById(id);}),
     pill=document.querySelector(".toc-pill"),cur=-1,ticking=false;
 function easeWidth(el,v){el.style.width=v+"%";}
 function update(){
@@ -997,7 +1395,7 @@ function fireConfetti(){
   var c=document.getElementById("confetti"),ctx=c.getContext("2d");
   c.width=window.innerWidth;c.height=window.innerHeight;
   c.classList.add("show");
-  var cols=["#53df86", "#66e292", "#2aa257", "#fbbf24", "#edf0f9"],parts=[];
+  var cols=["#dfb853", "#66e2d2", "#2a35a2", "#fbbf24", "#edf0f9"],parts=[];
   for(var i=0;i<45;i++)parts.push({x:Math.random()*c.width,y:-20-Math.random()*c.height*0.25,
     w:4+Math.random()*4,h:5+Math.random()*5,c:cols[i%cols.length],
     vy:0.7+Math.random()*1.1,ph:Math.random()*Math.PI*2,sw:0.4+Math.random()*0.8,
@@ -1033,16 +1431,12 @@ fio.observe(document.querySelector("footer"));
 /* Mini-poll backend config. Empty = preview mode (local votes, 3-day cooldown).
    To go live: fill in your Supabase project URL + anon key (see poll-admin README). */
 window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
-  accents: ["#53df86", "#66e292", "#26954f", "#15803d", "#2aa257", "#72e49c", "#fbbf24", "#052e16", "#106831"] };
+  accents: ["#dfb853", "#66e2d2", "#957626", "#806215", "#2a35a2", "#e4c472", "#fbbf24", "#052e29", "#101868"] };
 </script>
 <script>
 /* Mini-poll web component — vanilla JS, no dependencies.
    Usage:
-     <mini-poll slug="thymosin-alpha1-mini-ch1"
-       data-question="Had you heard of Thymosin Alpha-1 before today?"
-       data-answers='[["🆕","No — brand new to me"],["👀","Heard the name"]]'>
-     </mini-poll>
-   Add `data-expanded` to start open; otherwise polls start as a slim,
+Add `data-expanded` to start open; otherwise polls start as a slim,
    collapsed teaser (tap to expand). Questions/answers come from the backend
    when configured; data-* attributes are the preview fallback.
    Configure once per page:
@@ -1117,8 +1511,8 @@ window.MINI_POLL_CONFIG = { supabaseUrl: "", anonKey: "", turnstileSiteKey: "",
      Palette comes from window.MINI_POLL_CONFIG.accents when the page sets one,
      otherwise the default nine-color set. */
   var ACCENTS = (window.MINI_POLL_CONFIG && window.MINI_POLL_CONFIG.accents) ||
-                ['#fdba74', '#a3e635', '#fb923c', '#a78bfa', '#f472b6',
-                 '#a3e635', '#fbbf24', '#fb7185', '#22d3ee'];
+                ['#fbd676', '#a3e635', '#fac53d', '#a78bfa', '#72f4e4',
+                 '#a3e635', '#fbbf24', '#71fbea', '#22d3ee'];
   function pollAccents(slug) {
     var m = /ch(\d+)/.exec(slug || '');
     var i = m ? parseInt(m[1], 10) - 1 : 0;
